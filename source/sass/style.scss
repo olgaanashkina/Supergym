@@ -1,0 +1,58 @@
+@import "blocks/var-mixin.scss";
+
+
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../fonts/bebasneue.woff2") format("woff2"),
+    url("../fonts/bebasneue.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../fonts/robotocondensed.woff2") format("woff2"),
+    url("../fonts/robotocondensed.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../fonts/robotocondensedbold.woff2") format("woff2"),
+    url("../fonts/robotocondensedbold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  // max-width: 1920px;
+  // width: 100%;
+  // margin: 0 auto;
+  // padding: 0;
+  // font-family: "PT Mono", "Arial", sans-serif;
+  // font-size: 16px;
+  // line-height: 22px;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

@@ -1,0 +1,18 @@
+$desktop-width: 1200px;
+$tablet-width: 768px;
+$mobile-width-only: 767px;
+$mobile-width: 320px;
+
+
+@mixin marginnone {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin center {
+  margin: 0 auto;
+}
+
+@mixin line {
+  border: solid 1px red;
+}
