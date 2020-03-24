@@ -6,23 +6,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: radial-gradient(33.97% 69.22% at 16.03% 39.06%, #003D85 99.48%, #B80027 99.03%);
+  background: radial-gradient(circle at center, #003D85, #B80027);
 }
 
 .page-header__wrap {
   max-width: 1160px;
   width: 100%;
   @include center;
-  margin-top: 30px;
-  min-height: 20px;
+  margin-top: 29px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-}
-
-.page-header__phone {
-  width: 155px;
-  @include marginnone;
   font-family: "Bebas Neue", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -30,4 +24,73 @@
   line-height: 26px;
   letter-spacing: 0.03em;
   color: $white;
+}
+
+.page-header__phone {
+  width: 155px;
+  @include marginnone;
+}
+
+.page-header__link {
+  width: 89px;
+  letter-spacing: 0.02em;
+  color: $white;
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .page-header {
+    max-width: 1199px;
+    width: 100%;
+    @include center;
+    min-height: 554px;
+    background: radial-gradient(34.19% 66.65% at 20.7% 35.74%, #003D85 118.87%, #B80027 82.22%);
+  }
+
+  .page-header__wrap {
+    min-width: 678px;
+    width: 88.3%;
+    @include center;
+    margin-top: 40px;
+    margin-bottom: 18px;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+  }
+
+  .page-header__phone {
+    width: 138px;
+    text-align: right;
+  }
+
+  .page-header__link {
+    width: 82px;
+  }
+}
+
+@media (min-width: $mobile-width) and (max-width: $mobile-width-only) {
+  .page-header {
+    min-width: 320px;
+    width: 100%;
+    min-height: 491px;
+    background: radial-gradient(97.51% 64.94% at 35.31% 34.22%, #003D85 102.07%, #B80027 96.62%);
+  }
+
+  .page-header__wrap {
+    min-width: 290px;
+    width: 90.6%;
+    @include center;
+    margin-top: 20px;
+    margin-bottom: 75px;
+    font-size: 20px;
+    line-height: 20px;
+    justify-content: space-between;
+  }
+
+  .page-header__phone {
+    width: 117px;
+  }
+
+  .page-header__link {
+    width: 68px;
+  }
 }

@@ -4,13 +4,12 @@
   @include center;
   min-height: 556px;
   display: flex;
-  // justify-content: space-between;
 }
 
 .home__wrap {
   position: relative;
-  width: 380px;
-  margin-top: 120px;
+  width: 394px;
+  margin-top: 90px;
   margin-right: 5.5%;
   display: flex;
   flex-direction: column;
@@ -37,24 +36,29 @@
 .home__head {
   font-size: 109px;
   line-height: 109px;
-  margin-bottom: 80px;
+  margin-bottom: 67px;
   font-weight: bold;
+  text-shadow: 1px 0 1px $white,
+  0 1px 1px $white,
+  -1px 0 1px $white,
+  0 -1px 1px $white;
 }
 
 .home__list {
   list-style: none;
   position: absolute;
-  top: 190px;
+  top: 195px;
   left: -20px;
   width: 115px;
   min-height: 52px;
+  text-align: right;
   font-size: 14px;
   line-height: 21px;
 }
 
 .home__button {
   width: 230px;
-  height: 57px;
+  height: 62px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,7 +66,98 @@
   background-color: transparent;
   font-size: 12px;
   line-height: 14px;
-  letter-spacing: 0.05em;
   text-transform: uppercase;
   color: $white;
+}
+
+.home__image {
+  width: 500px;
+  height: 556px;
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .home {
+    min-width: 678px;
+    max-width: 750px;
+    width: 88.3%;
+    min-height: 390px;
+    justify-content: space-between;
+  }
+
+  .home__wrap {
+    width: 324px;
+    margin-top: 54px;
+    margin-right: 0;
+  }
+
+  .home__town {
+    margin-top: 0;
+    font-size: 34px;
+    line-height: 34px;
+  }
+
+  .home__head {
+    font-size: 86px;
+    line-height: 86px;
+    margin-bottom: 45px;
+  }
+
+  .home__list {
+    top: 117px;
+    left: -39px;
+  }
+
+  .home__button {
+    width: 188px;
+    height: 62px;
+  }
+
+  .home__image {
+    width: 324px;
+    height: 390px;
+  }
+}
+
+@media (min-width: $mobile-width) and (max-width: $mobile-width-only) {
+  .home {
+    min-width: 290px;
+    width: 90.6%;
+    min-height: 296px;
+    justify-content: space-between;
+  }
+
+  .home__image {
+    display: none;
+  }
+
+  .home__wrap {
+    min-width: 290px;
+    max-width: 295px;
+    @include center;
+    width: 90.6%;
+    margin-top: 0;
+  }
+
+  .home__town {
+    margin-top: 0;
+    margin-bottom: 6px;
+    font-size: 28px;
+    line-height: 26px;
+  }
+
+  .home__head {
+    font-size: 78px;
+    line-height: 78px;
+    margin-bottom: 48px;
+  }
+
+  .home__list {
+    top: 105px;
+    left: -41px;
+  }
+
+  .home__button {
+    width: 290px;
+    height: 63px;
+  }
 }
