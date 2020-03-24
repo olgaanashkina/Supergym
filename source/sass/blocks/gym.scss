@@ -1,0 +1,77 @@
+.gym {
+  max-width: 1366px;
+  width: 100%;
+  min-height: 756px;
+  @include marginnone;
+  display: flex;
+  background-color: $white;
+  color: $blue;
+}
+
+.gym__container {
+  position: relative;
+  max-width: 1160px;
+  width: 85%;
+  @include center;
+  min-height: 516px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gym__wrap {
+  max-width: 1160px;
+  width: 100%;
+  @include center;
+  margin-top: 120px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.gym__cont {
+  max-width: 355px;
+  width: 31%;
+  min-height: 314px;
+  margin-top: 3.5%;
+  margin-left: 3%;
+  margin-right: 9%;
+  display: flex;
+  flex-direction: column;
+}
+
+.gym__head {
+  width: 325px;
+  min-height: 37px;
+  @include marginnone;
+  margin-bottom: 25px;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+}
+
+.gym__detail {
+  width: 325px;
+  @include marginnone;
+  margin-bottom: 55px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.gym__text {
+  width: 355px;
+  @include marginnone;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
+.gym__play {
+  width: 364px;
+  margin-top: -105px;
+}

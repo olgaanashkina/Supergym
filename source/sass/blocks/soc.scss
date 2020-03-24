@@ -1,0 +1,22 @@
+.soc {
+  list-style: none;
+  width: 16px;
+  min-height: 75px;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.soc__item {
+  min-height: 9px;
+  margin-top: 24px;
+}
+
+.soc__item a {
+  color: $white;
+}

@@ -1,0 +1,8 @@
+.page-main {
+  max-width: 1366px;
+  width: 100%;
+  min-height: 5125px;
+  @include marginnone;
+  display: flex;
+  flex-direction: column;
+}

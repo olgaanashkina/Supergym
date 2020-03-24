@@ -1,0 +1,33 @@
+.page-header {
+  max-width: 1366px;
+  width: 100%;
+  @include center;
+  min-height: 658px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: radial-gradient(33.97% 69.22% at 16.03% 39.06%, #003D85 99.48%, #B80027 99.03%);
+}
+
+.page-header__wrap {
+  max-width: 1160px;
+  width: 100%;
+  @include center;
+  margin-top: 30px;
+  min-height: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.page-header__phone {
+  width: 155px;
+  @include marginnone;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  color: $white;
+}

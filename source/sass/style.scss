@@ -1,5 +1,9 @@
 @import "blocks/var-mixin.scss";
-
+@import "blocks/page-header.scss";
+@import "blocks/home.scss";
+@import "blocks/soc.scss";
+@import "blocks/page-main.scss";
+@import "blocks/gym.scss";
 
 
 @font-face {
@@ -30,13 +34,13 @@
 }
 
 body {
-  // max-width: 1920px;
-  // width: 100%;
-  // margin: 0 auto;
-  // padding: 0;
-  // font-family: "PT Mono", "Arial", sans-serif;
-  // font-size: 16px;
-  // line-height: 22px;
+  max-width: 1366px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 a {
