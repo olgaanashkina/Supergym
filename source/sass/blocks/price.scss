@@ -1,0 +1,37 @@
+.price {
+  width: 166px;
+  min-height: 80px;
+  margin-bottom: 59px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price__value {
+  @include marginnone;
+  width: 125px;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 90px;
+  text-align: left;
+  color: $navy-blue;
+  text-shadow: 25px -35px 0px #E8E8E8,
+  30px -40px 0px rgba(232, 232, 232, 0.9);
+}
+
+.price__valuta {
+  @include marginnone;
+  width: 30px;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 600;
+  color: $blue;
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+
+}
+
+@media (min-width: $mobile-width) and (max-width: $mobile-width-only) {
+
+}

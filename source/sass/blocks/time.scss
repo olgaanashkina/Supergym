@@ -1,0 +1,31 @@
+.time {
+  list-style: none;
+  @include marginnone;
+  min-width: 345px;
+  width: 25%;
+  @include center;
+  min-height: 34px;
+  margin-bottom: 39px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+}
+
+.time__item {
+  font-size: 20px;
+  line-height: 30px;
+  color: rgba(16, 38, 84, 0.5);
+  min-height: 38px;
+  border-bottom: 2px solid red;
+  box-sizing: border-box;
+  margin: 0 0 -2px 0;
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+
+}
+
+@media (min-width: $mobile-width) and (max-width: $mobile-width-only) {
+
+}

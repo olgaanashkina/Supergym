@@ -1,0 +1,30 @@
+.membership {
+  max-width: 1366px;
+  width: 100%;
+  min-height: 851px;
+  @include marginnone;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $light-gray;
+  color: $blue;
+}
+
+.membership__head {
+  width: 230px;
+  margin-bottom: 50px;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  color: $storm;
+}
+
+
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+}
+
+@media (min-width: $mobile-width) and (max-width: $mobile-width-only) {
+
+}
