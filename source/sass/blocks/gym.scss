@@ -30,11 +30,12 @@
   min-height: 516px;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
 }
 
 .gym__wrap {
-  max-width: 1160px;
+  max-width: 1100px;
   width: 100%;
   @include center;
   margin-top: 120px;
@@ -42,7 +43,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .gym__cont {
@@ -96,4 +96,175 @@
   height: 228px;
   margin-left: 70px;
   margin-top: -120px;
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .gym {
+    position: relative;
+    min-width: 768px;
+    width: 100%;
+    min-height: 854px;
+
+    &::before {
+      width: 73px;
+      height: 73px;
+      bottom: 150px;
+      left: 45%;
+      background-image: url("../img/play.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: 10;
+    }
+  }
+
+  .gym__container {
+    max-width: 678px;
+    width: 88.3%;
+    @include center;
+    min-height: 654px;
+  }
+
+  .gym__wrap {
+    max-width: 678px;
+    width: 100%;
+    margin-top: 100px;
+    min-height: 570px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .gym__cont {
+    min-width: 345px;
+    width: 44.9%;
+    min-height: 176px;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gym__head {
+    width: 280px;
+    min-height: 32px;
+    margin-bottom: 20px;
+    font-size: 42px;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+  }
+
+  .gym__detail {
+    width: 280px;
+    text-align: center;
+  }
+
+  .gym__text {
+    min-width: 502px;
+    text-align: center;
+
+    &--more {
+      display: none;
+    }
+  }
+
+  .gym__image {
+    width: 678px;
+    height: 345px;
+  }
+
+  .gym__play {
+    width: 266px;
+    height: 167px;
+    margin-left: 0;
+    margin-top: -120px;
+  }
+}
+
+@media (min-width: $mobile-width) and (max-width: $mobile-width-only) {
+  .gym {
+    min-width: 320px;
+    width: 100%;
+    min-height: 925px;
+
+    &::before {
+      width: 73px;
+      height: 73px;
+      bottom: 65px;
+      left: 40%;
+      background-image: url("../img/play.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: 10;
+    }
+  }
+
+  .gym__container {
+    min-width: 320px;
+    width: 100%;
+    @include center;
+    min-height: 785px;
+    align-items: center;
+  }
+
+  .gym__wrap {
+    min-width: 320px;
+    width: 100%;
+    margin-top: 70px;
+    min-height: 578px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gym__cont {
+    min-width: 320px;
+    width: 100%;
+    min-height: 225px;
+    margin-bottom: 40px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .gym__head {
+    width: 290px;
+    min-height: 24px;
+    padding-left: 12px;
+    font-size: 32px;
+    line-height: 32px;
+    text-align: left;
+  }
+
+  .gym__detail {
+    width: 290px;
+    padding-left: 12px;
+    text-align: left;
+  }
+
+  .gym__text {
+    min-width: 250px;
+    width: 90%;
+    padding-left: 12px;
+    text-align: left;
+
+    &--more {
+      display: none;
+    }
+  }
+
+  .gym__image {
+    width: 320px;
+    height: 313px;
+    margin-bottom: 40px;
+  }
+
+  .gym__play {
+    width: 320px;
+    height: 167px;
+    margin-left: 0;
+    margin-top: 0;
+  }
 }
