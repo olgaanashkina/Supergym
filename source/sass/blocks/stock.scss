@@ -1,0 +1,119 @@
+.stock {
+  width: 560px;
+  height: 462px;
+  @include marginnone;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.stock__item {
+  width: 516px;
+  min-height: 211px;
+  padding-left: 32px;
+  color: $indigo;
+  border: 6px solid transparent;
+  border-image: linear-gradient(to top left, #00359f 0%, #d52154 100%);
+  border-image-slice: 1;
+}
+
+.stock__title {
+  @include marginnone;
+  margin: 35px 0 20px 0;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 28px;
+}
+
+.stock__content {
+  @include marginnone;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 68px;
+}
+
+.stock__link {
+  width: 68px;
+  min-height: 13px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $indigo;
+  border-bottom: 1px solid $indigo;
+
+  &:hover,
+  &:focus {
+    color: $red;
+    border-bottom: 1px solid $red;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .stock {
+    width: 678px;
+    height: 211px;
+    @include marginnone;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .stock__item {
+    width: 280px;
+    min-height: 211px;
+  }
+
+  .stock__content {
+    width: 155px;
+    margin-bottom: 40px;
+
+    &--big {
+      width: 245px;
+      min-height: 43px;
+    }
+  }
+}
+
+@media (min-width: $mobile-width) and (max-width: $mobile-width-only) {
+  .stock {
+    width: 290px;
+    height: 452px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .stock__item {
+    width: 280px;
+    min-height: 200px;
+    padding-left: 0;
+    align-items: center;
+    margin-bottom: auto;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .stock__title {
+    text-align: center;
+  }
+
+  .stock__content {
+    width: 159px;
+    @include center;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .stock__link {
+    display: block;
+    margin: 0 auto;
+  }
+
+}

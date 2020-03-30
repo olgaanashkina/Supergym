@@ -1,0 +1,102 @@
+.promo {
+  max-width: 1366px;
+  width: 100%;
+  min-height: 800px;
+  @include center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $white;
+}
+
+.promo__head {
+  @include marginnone;
+  width: 1160px;
+  min-height: 37px;
+  margin: 100px 0 55px 0;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  color: $blue;
+  text-align: center;
+}
+
+.promo__cont {
+  width: 1160px;
+  max-height: 462px;
+  margin-bottom: 120px;
+  display: flex;
+  justify-content: center;
+}
+
+.promo__image {
+  width: 280px;
+  height: 462px;
+  background-color: $sky-blue;
+  margin-right: 40px;
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .promo {
+    min-width: 768px;
+    width: 100%;
+    min-height: 985px;
+  }
+
+  .promo__head {
+    @include marginnone;
+    width: 768px;
+    min-height: 32px;
+    margin: 100px 0 50px 0;
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  .promo__cont {
+    width: 678px;
+    max-height: 462px;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+  }
+
+  .promo__image {
+    width: 399px;
+    height: 462px;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: $mobile-width) and (max-width: $mobile-width-only) {
+  .promo {
+    min-width: 320px;
+    width: 100%;
+    min-height: 1294px;
+  }
+
+  .promo__head {
+    @include marginnone;
+    width: 320px;
+    min-height: 24px;
+    margin: 70px 0 50px 0;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .promo__cont {
+    width: 290px;
+    min-height: 1080px;
+    margin-bottom: 70px;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .promo__image {
+    width: 290px;
+    height: 299px;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}

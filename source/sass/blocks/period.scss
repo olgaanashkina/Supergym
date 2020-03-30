@@ -1,0 +1,162 @@
+.period {
+  width: 95px;
+  max-height: 158px;
+  @include marginnone;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.period__wrap {
+  width: 95px;
+  min-height: 26px;
+  margin-bottom: 32px;
+  display: flex;
+  align-items: baseline;
+}
+
+.period__number {
+  width: 22px;
+  min-height: 28px;
+  @include marginnone;
+  margin-right: 7px;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.period__cont {
+  width: 27px;
+  min-height: 28px;
+  @include marginnone;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.period__title {
+  @include marginnone;
+  min-height: 26px;
+  margin-bottom: 6px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid $white;
+
+  &--data {
+    width: 64px;
+  }
+}
+
+.period__hour {
+  width: 92px;
+  min-height: 28px;
+  @include marginnone;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 40px;
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .period {
+    width: 56px;
+    max-height: 91px;
+    font-size: 12px;
+    line-height: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .period__title {
+    @include marginnone;
+    min-height: 16px;
+    margin-bottom: 6px;
+    padding-bottom: 4px;
+
+    &--data {
+      width: 42px;
+    }
+  }
+
+  .period__wrap {
+    width: 56px;
+    min-height: 19px;
+    margin-bottom: 10px;
+  }
+
+  .period__number {
+    width: 15px;
+    min-height: 19px;
+    @include marginnone;
+    margin-right: 3px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .period__cont {
+    width: 276px;
+    min-height: 19px;
+    font-size: 10px;
+    line-height: 15px;
+  }
+
+  .period__hour {
+    width: 56px;
+    min-height: 17px;
+    @include marginnone;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $mobile-width) and (max-width: $mobile-width-only) {
+  .period {
+    width: 56px;
+    max-height: 91px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .period__title {
+    min-height: 16px;
+    margin-bottom: 5px;
+    padding-bottom: 4px;
+
+    &--data {
+      width: 42px;
+    }
+  }
+
+  .period__wrap {
+    width: 42px;
+    min-height: 18px;
+    margin-bottom: 13px;
+  }
+
+  .period__number {
+    width: 13px;
+    min-height: 19px;
+    @include marginnone;
+    margin-right: 3px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .period__cont {
+    width: 26px;
+    max-height: 19px;
+    font-size: 10px;
+    line-height: 15px;
+  }
+
+  .period__hour {
+    width: 56px;
+    min-height: 17px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+}

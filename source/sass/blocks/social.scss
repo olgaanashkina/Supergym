@@ -1,0 +1,46 @@
+.social {
+  list-style: none;
+  @include marginnone;
+  width: 110px;
+  min-height: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social__icon {
+  fill: $white;
+}
+
+.social__link {
+  &:hover,
+  &:focus {
+    .social__icon {
+      fill: $indigo;
+    }
+  }
+}
+
+@media (min-width: $mobile-width) and (max-width: $mobile-width-only) {
+  .social {
+    width: 143px;
+    min-height: 27px;
+  }
+
+  social__icon {
+
+    &--vk {
+      width: 32px;
+      height: 17px;
+    }
+
+    &--inst {
+      width: 27px;
+      height: 27px;
+    }
+
+    &--fb {
+      width: 14px;
+      height: 27px;
+    }
+  }
+}

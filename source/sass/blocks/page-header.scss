@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: radial-gradient(circle at center, #003D85, #B80027);
+  background: radial-gradient(90% 120% at 1% 90%, #003D85, #B80027);
 }
 
 .page-header__wrap {
@@ -28,6 +28,16 @@
 
 .page-header__phone {
   width: 155px;
+  color: $white;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+}
+
+.page-header__tel {
+  width: 155px;
   @include marginnone;
 }
 
@@ -35,6 +45,12 @@
   width: 89px;
   letter-spacing: 0.02em;
   color: $white;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
@@ -43,7 +59,7 @@
     width: 100%;
     @include center;
     min-height: 554px;
-    background: radial-gradient(34.19% 66.65% at 20.7% 35.74%, #003D85 118.87%, #B80027 82.22%);
+    background: radial-gradient(90% 120% at 1% 90%, #003D85, #B80027);
   }
 
   .page-header__wrap {
@@ -72,7 +88,7 @@
     min-width: 320px;
     width: 100%;
     min-height: 491px;
-    background: radial-gradient(97.51% 64.94% at 35.31% 34.22%, #003D85 102.07%, #B80027 96.62%);
+    background:  radial-gradient(97% 150% at 1% 70%, #003D85, #B80027);
   }
 
   .page-header__wrap {

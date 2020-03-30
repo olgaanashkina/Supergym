@@ -1,0 +1,139 @@
+.form {
+  width: 410px;
+  min-height: 200px;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: $white;
+}
+
+.form__text {
+  width: 410px;
+  @include marginnone;
+  min-height: 37px;
+  margin-bottom: 22px;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 49px;
+  line-height: 58px;
+  letter-spacing: 0.03em;
+  text-transform: lowercase;
+}
+
+.form__wrap {
+  width: 410px;
+  min-height: 22px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.form__input {
+  width: 190px;
+  height: 22px;
+  margin-bottom: 14px;
+  padding: 2px 0 10px 0;
+  font-size: 18px;
+  line-height: 18px;
+  border: none;
+  background: transparent;
+  color: $white;
+  border-bottom: 1px solid #74819C;
+  outline: none;
+
+
+  &::placeholder {
+    font-size: 14px;
+    color: $white;
+  }
+
+  &:first-child {
+    margin-right: auto;
+  }
+}
+
+.form__button {
+  width: 408px;
+  height: 52px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid $white;
+  background: transparent;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $white;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $blue-black;
+    border: 3px solid $blue-black;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .form {
+    width: 474px;
+    min-height: 184px;
+    margin-right: 5%;
+  }
+
+  .form__text {
+    width: 474px;
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  .form__wrap {
+    width: 472px;
+  }
+
+  .form__input {
+    width: 206px;
+  }
+
+  .form__button {
+    width: 472px;
+  }
+}
+
+@media (min-width: $mobile-width) and (max-width: $mobile-width-only) {
+  .form {
+    width: 290px;
+    min-height: 246px;
+    margin-right: 0;
+  }
+
+  .form__text {
+    width: 290px;
+    min-height: 24px;
+    margin-bottom: 45px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .form__wrap {
+    width: 290px;
+    min-height: 82px;
+    // margin-bottom: 40px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form__input {
+    width: 290px;
+  }
+
+  .form__button {
+    width: 472px;
+  }
+
+  .form__button {
+    width: 290px;
+  }
+}

@@ -20,6 +20,11 @@
 
 .soc__item a {
   color: $white;
+
+  &:hover,
+  &:focus {
+    color: $indigo;
+  }
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {

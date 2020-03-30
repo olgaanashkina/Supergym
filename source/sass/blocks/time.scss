@@ -15,17 +15,64 @@
 .time__item {
   font-size: 20px;
   line-height: 30px;
-  color: rgba(16, 38, 84, 0.5);
   min-height: 38px;
+  display: flex;
+}
+
+.time__link {
+  @include marginnone;
+  font-size: 20px;
+  line-height: 30px;
+  min-height: 38px;
+  color: rgba(16, 38, 84, 0.5);
+  background-color: transparent;
+  border: none;
+
+  &:hover,
+  &:focus {
+    border-bottom: 2px solid red;
+    box-sizing: border-box;
+    margin: 0 0 -2px 0;
+  }
+}
+
+.time-active {
   border-bottom: 2px solid red;
   box-sizing: border-box;
   margin: 0 0 -2px 0;
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .time {
+    min-width: 335px;
+    width: 43.6%;
+    min-height: 34px;
+    margin-bottom: 45px;
+  }
 
+  .time__item {
+    font-size: 18px;
+    line-height: 27px;
+  }
 }
 
 @media (min-width: $mobile-width) and (max-width: $mobile-width-only) {
+  .time {
+    min-width: 290px;
+    max-width: 360px;
+    width: 90.6%;
+    min-height: 31px;
+    margin-bottom: 43px;
+  }
 
+  .time__item {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .time__link {
+    @include marginnone;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

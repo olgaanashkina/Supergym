@@ -7,25 +7,11 @@
   display: flex;
   background-color: $white;
   color: $blue;
-
-  &::before {
-    position: absolute;
-    content: "";
-    width: 100px;
-    height: 100px;
-    bottom: 170px;;
-    left: 48%;
-    background-image: url("../img/play.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 10;
-  }
 }
 
 .gym__container {
   position: relative;
-  max-width: 1160px;
-  width: 85%;
+  width: 1160px;
   @include center;
   min-height: 516px;
   display: flex;
@@ -91,11 +77,36 @@
   }
 }
 
-.gym__play {
+.gym__wrapper {
+  position: relative;
   width: 364px;
   height: 228px;
   margin-left: 70px;
   margin-top: -120px;
+  cursor: pointer;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 100px;
+    bottom: 30%;
+    left: 35%;
+    background-image: url("../img/play.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 10;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    opacity: 0.8;
+  }
+}
+
+.gym__play {
+  width: 364px;
+  height: 228px;
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
@@ -104,22 +115,10 @@
     min-width: 768px;
     width: 100%;
     min-height: 854px;
-
-    &::before {
-      width: 73px;
-      height: 73px;
-      bottom: 150px;
-      left: 45%;
-      background-image: url("../img/play.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      z-index: 10;
-    }
   }
 
   .gym__container {
-    max-width: 678px;
-    width: 88.3%;
+    width: 678px;
     @include center;
     min-height: 654px;
   }
@@ -177,11 +176,31 @@
     height: 345px;
   }
 
-  .gym__play {
+  .gym__wrapper {
+    position: relative;
     width: 266px;
     height: 167px;
     margin-left: 0;
     margin-top: -120px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 73px;
+      height: 73px;
+      bottom: 30%;
+      left: 40%;
+      background-image: url("../img/play.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: 10;
+      cursor: pointer;
+    }
+  }
+
+  .gym__play {
+    width: 266px;
+    height: 167px;
   }
 }
 
@@ -190,29 +209,17 @@
     min-width: 320px;
     width: 100%;
     min-height: 925px;
-
-    &::before {
-      width: 73px;
-      height: 73px;
-      bottom: 65px;
-      left: 40%;
-      background-image: url("../img/play.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      z-index: 10;
-    }
   }
 
   .gym__container {
-    min-width: 320px;
-    width: 100%;
+    width: 320px;
     @include center;
     min-height: 785px;
     align-items: center;
   }
 
   .gym__wrap {
-    min-width: 320px;
+    width: 320px;
     width: 100%;
     margin-top: 70px;
     min-height: 578px;
@@ -221,7 +228,7 @@
   }
 
   .gym__cont {
-    min-width: 320px;
+    width: 320px;
     width: 100%;
     min-height: 225px;
     margin-bottom: 40px;
@@ -261,10 +268,30 @@
     margin-bottom: 40px;
   }
 
-  .gym__play {
+  .gym__wrapper {
+    position: relative;
     width: 320px;
     height: 167px;
     margin-left: 0;
     margin-top: 0;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 73px;
+      height: 73px;
+      bottom: 30%;
+      left: 40%;
+      background-image: url("../img/play.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: 10;
+      cursor: pointer;
+    }
+  }
+
+  .gym__play {
+    width: 320px;
+    height: 167px;
   }
 }

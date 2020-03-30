@@ -1,4 +1,5 @@
 .membership {
+  position: relative;
   max-width: 1366px;
   width: 100%;
   min-height: 851px;
@@ -8,10 +9,24 @@
   align-items: center;
   background-color: $light-gray;
   color: $blue;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/disk.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 287px;
+    height: 494px;
+    right: 0;
+    bottom: -160px;
+  }
 }
 
 .membership__head {
+  @include marginnone;
   width: 230px;
+  margin-top: 120px;
   margin-bottom: 50px;
   font-family: "Bebas Neue", "Arial", sans-serif;
   font-size: 49px;
@@ -20,11 +35,75 @@
   color: $storm;
 }
 
-
+.membership__wrap {
+  position: relative;
+  @include marginnone;
+  max-width: 1160px;
+  min-width: 1080px;
+  width: 85%;
+  @include center;
+  min-height: 448px;
+  margin-bottom: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .membership {
+    position: relative;
+    min-width: 768px;
+    width: 100%;
+    min-height: 1779px;
+
+    &::before {
+      width: 259px;
+      height: 494px;
+      right: 0;
+      bottom: -160px;
+    }
+  }
+
+  .membership__head {
+    width: 205px;
+    margin-top: 100px;
+    margin-bottom: 45px;
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  .membership__wrap {
+    min-width: 442px;
+    width: 57.6%;
+    min-height: 1424px;
+    margin-bottom: 100px;
+    flex-direction: column;
+  }
 }
 
 @media (min-width: $mobile-width) and (max-width: $mobile-width-only) {
+  .membership {
+    min-width: 320px;
+    width: 100%;
+    min-height: 1487px;
 
+    &::before {
+      display: none;
+    }
+  }
+
+  .membership__head {
+    width: 150px;
+    margin-top: 70px;
+    margin-bottom: 35px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .membership__wrap {
+    min-width: 290px;
+    width: 90.6%;
+    min-height: 1222px;
+    margin-bottom: 70px;
+  }
 }
