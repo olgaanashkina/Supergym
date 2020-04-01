@@ -1,12 +1,11 @@
 .navigation {
   min-width: 1366px;
   width: 100%;
-  padding-top: 30px;
+  padding-top: 5px;
   @include center;
-  min-height: 78px;
+  min-height: 103px;
   display: flex;
   justify-content: center;
-  // align-items: center;
   background-color: $blue-black;
   color: $white;
 }
@@ -46,6 +45,7 @@
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .navigation {
     min-width: 768px;
+    padding-top: 0px;
     width: 100%;
     @include center;
     min-height: 114px;
@@ -72,8 +72,10 @@
   .navigation {
     min-width: 320px;
     width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
     @include center;
-    min-height: 260px;
+    min-height: 160px;
   }
 
   .navigation__wrap {
