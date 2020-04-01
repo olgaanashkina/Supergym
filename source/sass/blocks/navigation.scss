@@ -1,11 +1,12 @@
 .navigation {
   min-width: 1366px;
   width: 100%;
+  padding-top: 30px;
   @include center;
-  min-height: 108px;
+  min-height: 78px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  // align-items: center;
   background-color: $blue-black;
   color: $white;
 }
