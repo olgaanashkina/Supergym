@@ -1,6 +1,5 @@
 .gym {
-  position: relative;
-  max-width: 1366px;
+  min-width: 1366px;
   width: 100%;
   min-height: 756px;
   @include marginnone;
@@ -15,29 +14,22 @@
   @include center;
   min-height: 516px;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
 }
 
 .gym__wrap {
-  max-width: 1100px;
-  width: 100%;
+  width: 1160px;
   @include center;
   margin-top: 120px;
   min-height: 401px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 
 .gym__cont {
-  max-width: 355px;
-  width: 32%;
+  width: 415px;
   min-height: 314px;
-  margin-top: 3.7%;
-  margin-left: 5%;
-  margin-right: auto;
+  margin-top: 3.8%;
+  padding-left: 60px;
+  margin-right: 85px;
   display: flex;
   flex-direction: column;
 }
@@ -77,12 +69,20 @@
   }
 }
 
-.gym__wrapper {
+.gym__back {
   position: relative;
+  width: 660px;
+  height: 401px;
+  background-color: $light-gray;
+  display: flex;
+}
+
+.gym__wrapper {
+  position: absolute;
   width: 364px;
   height: 228px;
-  margin-left: 70px;
-  margin-top: -120px;
+  top: 289px;
+  right: 360px;
   cursor: pointer;
 
   &::after {
@@ -90,8 +90,8 @@
     content: "";
     width: 100px;
     height: 100px;
-    bottom: 30%;
-    left: 35%;
+    bottom: 29.5%;
+    left: 36.5%;
     background-image: url("../img/play.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -124,25 +124,21 @@
   }
 
   .gym__wrap {
-    max-width: 678px;
-    width: 100%;
-    margin-top: 100px;
+    width: 678px;
+    margin-top: 97px;
     min-height: 570px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    align-items: center;
   }
 
   .gym__cont {
-    min-width: 345px;
-    width: 44.9%;
+    width: 678px;
     min-height: 176px;
+    padding-left: 0px;
     margin-top: 0;
     margin-left: 0;
     margin-right: 0;
-    margin-bottom: 50px;
+    margin-bottom: 44px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -151,15 +147,16 @@
   .gym__head {
     width: 280px;
     min-height: 32px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size: 42px;
     line-height: 42px;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.037em;
   }
 
   .gym__detail {
     width: 280px;
     text-align: center;
+    margin-bottom: 35px;
   }
 
   .gym__text {
@@ -171,25 +168,31 @@
     }
   }
 
+  .gym__back {
+    position: relative;
+    width: 678px;
+    height: 345px;
+  }
+
   .gym__image {
     width: 678px;
     height: 345px;
   }
 
   .gym__wrapper {
-    position: relative;
+    position: absolute;
     width: 266px;
     height: 167px;
-    margin-left: 0;
-    margin-top: -120px;
+    top: 259px;
+    left: 205px;
 
     &::after {
       position: absolute;
       content: "";
       width: 73px;
       height: 73px;
-      bottom: 30%;
-      left: 40%;
+      bottom: 48px;
+      left: 95px;
       background-image: url("../img/play.png");
       background-repeat: no-repeat;
       background-size: cover;
@@ -215,23 +218,20 @@
     width: 320px;
     @include center;
     min-height: 785px;
-    align-items: center;
   }
 
   .gym__wrap {
     width: 320px;
-    width: 100%;
-    margin-top: 70px;
+    margin-top: 55px;
     min-height: 578px;
     flex-direction: column;
-    align-items: center;
   }
 
   .gym__cont {
     width: 320px;
-    width: 100%;
     min-height: 225px;
-    margin-bottom: 40px;
+    padding-left: 0;
+    margin-bottom: 33px;
     margin-left: 0;
     margin-right: 0;
   }
@@ -239,6 +239,7 @@
   .gym__head {
     width: 290px;
     min-height: 24px;
+    margin-bottom: 7px;
     padding-left: 12px;
     font-size: 32px;
     line-height: 32px;
@@ -247,13 +248,13 @@
 
   .gym__detail {
     width: 290px;
+    margin-bottom: 25px;
     padding-left: 12px;
     text-align: left;
   }
 
   .gym__text {
-    min-width: 250px;
-    width: 90%;
+    width: 255px;
     padding-left: 12px;
     text-align: left;
 
@@ -262,26 +263,32 @@
     }
   }
 
+  .gym__back {
+    position: relative;
+    width: 320px;
+    height: 313px;
+  }
+
   .gym__image {
     width: 320px;
     height: 313px;
-    margin-bottom: 40px;
   }
 
   .gym__wrapper {
-    position: relative;
+    position: absolute;
     width: 320px;
     height: 167px;
-    margin-left: 0;
-    margin-top: 0;
+    top: 353px;
+    left: 0;
+
 
     &::after {
       position: absolute;
       content: "";
       width: 73px;
       height: 73px;
-      bottom: 30%;
-      left: 40%;
+      bottom: 47px;
+      left: 125px;
       background-image: url("../img/play.png");
       background-repeat: no-repeat;
       background-size: cover;

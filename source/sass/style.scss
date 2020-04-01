@@ -54,8 +54,15 @@
   font-display: swap;
 }
 
+html {
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+}
+
 body {
-  max-width: 1366px;
+  position: relative;
+  min-width: 320px;
   width: 100%;
   margin: 0 auto;
   padding: 0;

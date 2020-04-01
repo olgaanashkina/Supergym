@@ -1,5 +1,5 @@
 .page-header {
-  max-width: 1366px;
+  min-width: 1366px;
   width: 100%;
   @include center;
   min-height: 658px;
@@ -7,11 +7,11 @@
   flex-direction: column;
   align-items: center;
   background: radial-gradient(90% 120% at 1% 90%, #003D85, #B80027);
+  background-size: contain;
 }
 
 .page-header__wrap {
-  max-width: 1160px;
-  width: 100%;
+  width: 1160px;
   @include center;
   margin-top: 29px;
   display: flex;
@@ -55,7 +55,7 @@
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .page-header {
-    max-width: 1199px;
+    min-width: 768px;
     width: 100%;
     @include center;
     min-height: 554px;
@@ -63,8 +63,7 @@
   }
 
   .page-header__wrap {
-    min-width: 678px;
-    width: 88.3%;
+    width: 678px;
     @include center;
     margin-top: 40px;
     margin-bottom: 18px;
@@ -81,6 +80,10 @@
   .page-header__link {
     width: 82px;
   }
+
+  .page-header__tel {
+    text-align: left;
+  }
 }
 
 @media (min-width: $mobile-width) and (max-width: $mobile-width-only) {
@@ -92,8 +95,7 @@
   }
 
   .page-header__wrap {
-    min-width: 290px;
-    width: 90.6%;
+    width: 290px;
     @include center;
     margin-top: 20px;
     margin-bottom: 75px;

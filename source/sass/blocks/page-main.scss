@@ -1,8 +1,24 @@
 .page-main {
-  max-width: 1366px;
+  min-width: 1366px;
   width: 100%;
-  min-height: 4775px;
+  min-height: 4787px;
   @include marginnone;
   display: flex;
   flex-direction: column;
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .page-main {
+    min-width: 768px;
+    width: 100%;
+    min-height: 5765px;
+  }
+}
+
+@media (min-width: $mobile-width) and (max-width: $mobile-width-only) {
+  .page-main {
+    min-width: 320px;
+    width: 100%;
+    min-height: 6558px;
+  }
 }

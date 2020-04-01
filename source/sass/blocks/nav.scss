@@ -43,14 +43,11 @@
   }
 
   .nav__item {
+    width: 160px;
     margin-bottom: 15px;
 
     &--first {
       padding-top: 35px;
     }
-  }
-
-  .nav__link {
-    margin-right: 75px;
   }
 }

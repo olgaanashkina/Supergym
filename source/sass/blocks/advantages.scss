@@ -1,7 +1,6 @@
 .advantages {
-  max-width: 1366px;
+  min-width: 1366px;
   width: 100%;
-  min-height: 664px;
   @include center;
   display: flex;
   justify-content: center;
@@ -13,9 +12,10 @@
   width: 1040px;
   min-height: 424px;
   @include center;
+  margin-top: 120px;
+  margin-bottom: 120px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
@@ -23,20 +23,22 @@
   width: 400px;
   min-height: 37px;
   @include marginnone;
-  margin-bottom: 80px;
+  margin-bottom: 68px;
   font-family: "Bebas Neue", "Arial", sans-serif;
   font-size: 49px;
   line-height: 49px;
   letter-spacing: 0.03em;
+  text-align: center;
   color: $blue;
 }
 
 .advantages__cont {
+  position: relative;
   width: 1040px;
-  max-height: 310px;
+  max-height: 307px;
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
@@ -47,24 +49,25 @@
   }
 
   .advantages__wrap {
-    width: 669px;
-    min-height: 555px;
+    width: 672px;
+    min-height: 545px;
+    margin-top: 90px;
+    margin-bottom: 100px;
   }
 
   .advantages__head {
     width: 400px;
     min-height: 32px;
-    margin-bottom: 60px;
+    margin-bottom: 53px;
     font-size: 42px;
     line-height: 42px;
     text-align: center;
   }
 
   .advantages__cont {
-    width: 669px;
-    max-height: 464px;
-    flex-direction: row;
-    flex-wrap: wrap;
+    width: 672px;
+    min-height: 462px;
+    justify-content: space-between;
   }
 }
 
@@ -78,14 +81,16 @@
   .advantages__wrap {
     width: 320px;
     min-height: 1161px;
+    margin-top: 0px;
+    margin-bottom: 50px;
     justify-content: flex-start;
   }
 
   .advantages__head {
     width: 320px;
     min-height: 24px;
-    margin-top: 70px;
-    margin-bottom: 50px;
+    margin-top: 58px;
+    margin-bottom: 54px;
     font-size: 32px;
     line-height: 32px;
     text-align: center;

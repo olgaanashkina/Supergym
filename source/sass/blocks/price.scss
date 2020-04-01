@@ -3,16 +3,15 @@
   min-width: 166px;
   max-width: 205px;
   min-height: 80px;
-  margin-bottom: 19px;
+  margin-bottom: 23px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
 .price__value {
   @include marginnone;
   min-width: 125px;
-  max-width: 170px;
+  max-width: 143px;
   font-weight: bold;
   font-size: 60px;
   line-height: 90px;
@@ -23,7 +22,7 @@
     position: absolute;
     content: attr(data-shadow);
     font-size: 60px;
-    left: 25px;
+    left: 5px;
     bottom: 7px;
   }
 
@@ -31,7 +30,12 @@
     content: attr(data-shadow);
     font-size: 100px;
     color: transparent;
-    text-shadow: 10px -19px 0px rgba(232, 232, 232, 0.47);
+    text-shadow: -12px -17px 0px rgba(232, 232, 232, 0.47);
+  }
+
+  &--six::before,
+  &--twelve::before {
+    text-shadow: -28px -17px 0px rgba(232, 232, 232, 0.47);
   }
 }
 
@@ -40,12 +44,47 @@
   width: 30px;
   font-size: 60px;
   line-height: 60px;
-  font-weight: 600;
+  font-weight: 500;
   color: $blue;
+
+  &--six,
+  &--twelve {
+    margin-left: 20px;
+  }
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .price {
+    margin-bottom: 26px;
+  }
 
+  .price__value {
+    min-width: 110px;
+    max-width: 133px;
+  }
+
+  .price__value {
+
+    &::after {
+      left: 2px;
+    }
+
+    &::before {
+      text-shadow: -16px -17px 0px rgba(232, 232, 232, 0.47);
+    }
+
+    &--six::before,
+    &--twelve::before {
+      text-shadow: -28px -17px 0px rgba(232, 232, 232, 0.47);
+    }
+  }
+
+  .price__valuta {
+    &--six,
+    &--twelve {
+      margin-left: 30px;
+    }
+  }
 }
 
 @media (min-width: $mobile-width) and (max-width: $mobile-width-only) {
@@ -57,7 +96,7 @@
   .price__value {
     @include marginnone;
     min-width: 100px;
-    max-width: 130px;
+    max-width: 125px;
     font-weight: bold;
     font-size: 48px;
     line-height: 72px;
@@ -66,15 +105,25 @@
       position: absolute;
       content: attr(data-shadow);
       font-size: 48px;
-      left: 30px;
+      left: 19px;
       bottom: 7px;
+    }
+
+    &--six::after,
+    &--twelve::after {
+      left: 10px;
     }
 
     &::before {
       content: attr(data-shadow);
       font-size: 80px;
       color: transparent;
-      text-shadow: 20px -19px 0px rgba(232, 232, 232, 0.47);
+      text-shadow: 4px -16px 0px rgba(232, 232, 232, 0.47);
+    }
+
+    &--six::before,
+    &--twelve::before {
+      text-shadow: -18px -17px 0px rgba(232, 232, 232, 0.47);
     }
   }
 
@@ -83,6 +132,11 @@
     width: 24px;
     font-size: 48px;
     line-height: 60px;
+
+    &--six,
+    &--twelve {
+      margin-left: 30px;
+    }
   }
 
 }

@@ -1,10 +1,9 @@
 .time {
   list-style: none;
   @include marginnone;
-  min-width: 345px;
-  width: 25%;
+  width: 343px;
   @include center;
-  min-height: 34px;
+  min-height: 38px;
   margin-bottom: 39px;
   display: flex;
   justify-content: space-between;
@@ -15,18 +14,21 @@
 .time__item {
   font-size: 20px;
   line-height: 30px;
-  min-height: 38px;
+  min-height: 42px;
   display: flex;
 }
 
 .time__link {
   @include marginnone;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 20px;
   line-height: 30px;
-  min-height: 38px;
+  min-height: 40px;
   color: rgba(16, 38, 84, 0.5);
   background-color: transparent;
   border: none;
+  cursor: pointer;
+  outline: none;
 
   &:hover,
   &:focus {
@@ -37,6 +39,7 @@
 }
 
 .time-active {
+  color: $blue;
   border-bottom: 2px solid red;
   box-sizing: border-box;
   margin: 0 0 -2px 0;
@@ -44,8 +47,7 @@
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .time {
-    min-width: 335px;
-    width: 43.6%;
+    width: 330px;
     min-height: 34px;
     margin-bottom: 45px;
   }
@@ -54,15 +56,19 @@
     font-size: 18px;
     line-height: 27px;
   }
+
+  .time__link {
+    font-size: 18px;
+    line-height: 27px;
+    height: 48px;
+  }
 }
 
 @media (min-width: $mobile-width) and (max-width: $mobile-width-only) {
   .time {
-    min-width: 290px;
-    max-width: 360px;
-    width: 90.6%;
+    width: 290px;
     min-height: 31px;
-    margin-bottom: 43px;
+    margin-bottom: 36px;
   }
 
   .time__item {
@@ -74,5 +80,12 @@
     @include marginnone;
     font-size: 16px;
     line-height: 24px;
+    min-width: 60px;
+    height: 46px;
+    text-align: left;
+
+    &--six {
+      min-width: 74px;
+    }
   }
 }

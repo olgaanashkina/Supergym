@@ -9,11 +9,6 @@
   <link rel="preload" href="fonts/robotocondensed.woff2" as="font" crossorigin="anonymous">
   <title>SUPERGYM</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <script>
-    // Picture element HTML5 shiv
-    document.createElement( "picture" );
-  </script>
-  <script src="js/picturefill.min.js" async></script>
 </head>
 <body>
   <div style="display:none">
@@ -64,19 +59,23 @@
             <p class="gym__text">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
             <p class="gym__text gym__text--more"> В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
           </div>
-          <picture>
-            <source media="(max-width: 767px)" srcset="img/gym-mob@1x.jpg 1x, img/gym-mob@2x.jpg 2x">
-            <source media="(max-width: 1199px)" srcset="img/gym-tab@1x.jpg 1x, img/gym-tab@2x.jpg 2x">
-            <img class="gym__image" src="img/gym-des@1x.jpg" srcset="img/gym-des@2x.jpg 2x" width="660" height="401" alt="Фото тренажерного зала">
-          </picture>
+          <div class="gym__back">
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/gym-mob@1x.jpg 1x, img/gym-mob@2x.jpg 2x">
+              <source media="(max-width: 1199px)" srcset="img/gym-tab@1x.jpg 1x, img/gym-tab@2x.jpg 2x">
+              <img class="gym__image" src="img/gym-des@1x.jpg" srcset="img/gym-des@2x.jpg 2x" width="660" height="401" alt="Фото тренажерного зала">
+            </picture>
+            <div class="gym__wrapper">
+              <picture>
+                <source media="(max-width: 767px)" srcset="img/video-mob@1x.jpg 1x, img/video-mob@2x.jpg 2x">
+                <source media="(max-width: 1199px)" srcset="img/video-tab@1x.jpg 1x, img/video-tab@2x.jpg 2x">
+                <img class="gym__play" src="img/video-des@1x.jpg" srcset="img/video-des@2x.jpg 2x" width="364" height="268" alt="Видео тренажерного зала">
+              </picture>
+            </div>
+          </div>
+
         </div>
-        <div class="gym__wrapper">
-          <picture>
-            <source media="(max-width: 767px)" srcset="img/video-mob@1x.jpg 1x, img/video-mob@2x.jpg 2x">
-            <source media="(max-width: 1199px)" srcset="img/video-tab@1x.jpg 1x, img/video-tab@2x.jpg 2x">
-            <img class="gym__play" src="img/video-des@1x.jpg" srcset="img/video-des@2x.jpg 2x" width="364" height="268" alt="Видео тренажерного зала">
-          </picture>
-        </div>
+
       </div>
     </section>
     <section class="page-main__membership membership" id="ship">
@@ -92,101 +91,123 @@
           <button class="time__link time__link--twelve" type="button">12 месяцев</button>
         </li>
       </ul>
-      <div class="membership__wrap">
-        <div class="membership__options options options--one options-show">
-          <ul class="options__list">
-            <li class="options__item">
-              <h3 class="options__head">С тренером</h3>
-              <p class="options__detail">12 занятий</p>
-              <div class="options__price price">
-                <p class="price__value" data-shadow="5000"></p>
-                <span class="price__valuta">₽</span>
-              </div>
-              <a class="options__button" href="#">купить абонемент</a>
-            </li>
-            <li class="options__item">
-              <h3 class="options__head">Дневной</h3>
-              <p class="options__detail">с 8:00 до 17:00</p>
-              <div class="options__price price">
-                <p class="price__value" data-shadow="1700"></p>
-                <span class="price__valuta">₽</span>
-              </div>
-              <a class="options__button" href="#">купить абонемент</a>
-            </li>
-            <li class="options__item">
-              <h3 class="options__head">Полный день</h3>
-              <p class="options__detail">с 8:00 до 22:00</p>
-              <div class="options__price price">
-                <p class="price__value" data-shadow="2700"></p>
-                <span class="price__valuta">₽</span>
-              </div>
-              <a class="options__button" href="#">купить абонемент</a>
-            </li>
-          </ul>
+      <!-- <div class="membership__wrapper"> -->
+        <div class="membership__wrap">
+          <div class="membership__options options options--one options-show">
+            <ul class="options__list">
+              <li class="options__item" onclick="">
+                <h3 class="options__head">С тренером</h3>
+                <p class="options__detail">12 занятий</p>
+                <div class="options__price price">
+                  <p class="price__value" data-shadow="5000"></p>
+                  <span class="price__valuta">₽</span>
+                </div>
+                <a class="options__button" href="#">купить абонемент</a>
+              </li>
+              <li class="options__item">
+                <h3 class="options__head">Дневной</h3>
+                <p class="options__detail">с 8:00 до 17:00</p>
+                <div class="options__price price">
+                  <p class="price__value" data-shadow="1700"></p>
+                  <span class="price__valuta">₽</span>
+                </div>
+                <a class="options__button" href="#">купить абонемент</a>
+              </li>
+              <li class="options__item">
+                <h3 class="options__head">Полный день</h3>
+                <p class="options__detail">с 8:00 до 22:00</p>
+                <div class="options__price price">
+                  <p class="price__value" data-shadow="2700"></p>
+                  <span class="price__valuta">₽</span>
+                </div>
+                <a class="options__button" href="#">купить абонемент</a>
+              </li>
+            </ul>
+          </div>
+          <div class="membership__options options options--six">
+            <ul class="options__list">
+<!--
+              <li class="options__item" onclick="">
+                <h3 class="options__head">С тренером</h3>
+                <p class="options__detail">12 занятий</p>
+                <div class="options__price price">
+                  <p class="price__value" data-shadow="5000"></p>
+                  <span class="price__valuta">₽</span>
+                </div>
+                <a class="options__button" href="#">купить абонемент</a>
+              </li>
+              <li class="options__item" onclick="">
+                <h3 class="options__head">С тренером</h3>
+                <p class="options__detail">12 занятий</p>
+                <div class="options__price price">
+                  <p class="price__value" data-shadow="5000"></p>
+                  <span class="price__valuta">₽</span>
+                </div>
+                <a class="options__button" href="#">купить абонемент</a>
+              </li> -->
+
+              <li class="options__item">
+                <h3 class="options__head">С тренером</h3>
+                <p class="options__detail">72 занятий</p>
+                <div class="options__price price">
+                  <p class="price__value price__value--six" data-shadow="30000"></p>
+                  <span class="price__valuta price__valuta--six">₽</span>
+                </div>
+                <a class="options__button" href="#">купить абонемент</a>
+              </li>
+              <li class="options__item">
+                <h3 class="options__head">Дневной</h3>
+                <p class="options__detail">с 8:00 до 17:00</p>
+                <div class="options__price price">
+                  <p class="price__value price__value--six" data-shadow="10000"></p>
+                  <span class="price__valuta price__valuta--six">₽</span>
+                </div>
+                <a class="options__button" href="#">купить абонемент</a>
+              </li>
+              <li class="options__item">
+                <h3 class="options__head">Полный день</h3>
+                <p class="options__detail">с 8:00 до 22:00</p>
+                <div class="options__price price">
+                  <p class="price__value price__value--six" data-shadow="16000"></p>
+                  <span class="price__valuta price__valuta--six">₽</span>
+                </div>
+                <a class="options__button" href="#">купить абонемент</a>
+              </li>
+            </ul>
+          </div>
+          <div class="membership__options options options--twelve">
+            <ul class="options__list">
+              <li class="options__item">
+                <h3 class="options__head">С тренером</h3>
+                <p class="options__detail">144 занятий</p>
+                <div class="options__price price">
+                  <p class="price__value price__value--twelve" data-shadow="60000"></p>
+                  <span class="price__valuta price__valuta--twelve">₽</span>
+                </div>
+                <a class="options__button" href="#">купить абонемент</a>
+              </li>
+              <li class="options__item">
+                <h3 class="options__head">Дневной</h3>
+                <p class="options__detail">с 8:00 до 17:00</p>
+                <div class="options__price price">
+                  <p class="price__value price__value--twelve" data-shadow="20000"></p>
+                  <span class="price__valuta price__valuta--twelve">₽</span>
+                </div>
+                <a class="options__button" href="#">купить абонемент</a>
+              </li>
+              <li class="options__item">
+                <h3 class="options__head">Полный день</h3>
+                <p class="options__detail">с 8:00 до 22:00</p>
+                <div class="options__price price">
+                  <p class="price__value price__value--twelve" data-shadow="32000"></p>
+                  <span class="price__valuta price__valuta--twelve">₽</span>
+                </div>
+                <a class="options__button" href="#">купить абонемент</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="membership__options options options--six">
-          <ul class="options__list">
-            <li class="options__item">
-              <h3 class="options__head">С тренером</h3>
-              <p class="options__detail">72 занятий</p>
-              <div class="options__price price">
-                <p class="price__value" data-shadow="30000"></p>
-                <span class="price__valuta">₽</span>
-              </div>
-              <a class="options__button" href="#">купить абонемент</a>
-            </li>
-            <li class="options__item">
-              <h3 class="options__head">Дневной</h3>
-              <p class="options__detail">с 8:00 до 17:00</p>
-              <div class="options__price price">
-                <p class="price__value" data-shadow="10000"></p>
-                <span class="price__valuta">₽</span>
-              </div>
-              <a class="options__button" href="#">купить абонемент</a>
-            </li>
-            <li class="options__item">
-              <h3 class="options__head">Полный день</h3>
-              <p class="options__detail">с 8:00 до 22:00</p>
-              <div class="options__price price">
-                <p class="price__value" data-shadow="16000"></p>
-                <span class="price__valuta">₽</span>
-              </div>
-              <a class="options__button" href="#">купить абонемент</a>
-            </li>
-          </ul>
-        </div>
-        <div class="membership__options options options--twelve">
-          <ul class="options__list">
-            <li class="options__item">
-              <h3 class="options__head">С тренером</h3>
-              <p class="options__detail">144 занятий</p>
-              <div class="options__price price">
-                <p class="price__value" data-shadow="60000"></p>
-                <span class="price__valuta">₽</span>
-              </div>
-              <a class="options__button" href="#">купить абонемент</a>
-            </li>
-            <li class="options__item">
-              <h3 class="options__head">Дневной</h3>
-              <p class="options__detail">с 8:00 до 17:00</p>
-              <div class="options__price price">
-                <p class="price__value" data-shadow="20000"></p>
-                <span class="price__valuta">₽</span>
-              </div>
-              <a class="options__button" href="#">купить абонемент</a>
-            </li>
-            <li class="options__item">
-              <h3 class="options__head">Полный день</h3>
-              <p class="options__detail">с 8:00 до 22:00</p>
-              <div class="options__price price">
-                <p class="price__value" data-shadow="32000"></p>
-                <span class="price__valuta">₽</span>
-              </div>
-              <a class="options__button" href="#">купить абонемент</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <!-- </div> -->
     </section>
     <section class="page-main__games games">
       <div class="games__back">
@@ -211,11 +232,13 @@
             <a class="games__button" href="#">заполнить заявку</a>
           </div>
         </div>
-        <picture>
-          <source media="(max-width: 767px)" srcset="img/gamer-mob@1x.jpg 1x, img/gamer-mob@2x.jpg 2x">
-          <source media="(max-width: 1199px)" srcset="img/gamer-tab@1x.jpg 1x, img/gamer-tab@2x.jpg 2x">
-          <img class="games__image" src="img/gamer-des@1x.jpg" srcset="img/gamer-des@2x.jpg 2x" width="660" height="500" alt="Фото спортсмена">
-        </picture>
+        <div class="games__wrapper">
+          <picture >
+            <source media="(max-width: 767px)" srcset="img/gamer-mob@1x.jpg 1x, img/gamer-mob@2x.jpg 2x">
+            <source media="(max-width: 1199px)" srcset="img/gamer-tab@1x.jpg 1x, img/gamer-tab@2x.jpg 2x">
+            <img class="games__image" src="img/gamer-des@1x.jpg" srcset="img/gamer-des@2x.jpg 2x" width="660" height="500" alt="Фото спортсмена">
+          </picture>
+        </div>
       </div>
     </section>
     <section class="page-main__trainers trainers">
@@ -371,19 +394,19 @@
             </div>
           </div>
         </div>
-        <button class="trainers__button trainers__button--left" type="button"></button>
-        <button class="trainers__button trainers__button--right" type="button"></button>
+        <button class="trainers__button trainers__button--left" type="button" aria-label="Листать влево"></button>
+        <button class="trainers__button trainers__button--right" type="button" aria-label="Листать вправо"></button>
       </div>
     </section>
     <section class="page-main__advantages advantages">
       <div class="advantages__wrap">
         <h2 class="advantages__head">Наши преимущества</h2>
         <div class="advantages__cont">
-          <div class="advantages__unit unit">
+          <div class="advantages__unit unit unit--area">
             <div class="unit__number unit__number--area"></div>
             <div class="unit__wrap">
               <h3 class="unit__title">Площадь</h3>
-              <p class="unit__content">Занимайтесь без очередей и толпучки</p>
+              <p class="unit__content">Занимайтесь без очередей<br> и толпучки</p>
             </div>
           </div>
           <div class="advantages__unit unit unit--parking">
@@ -396,7 +419,7 @@
           <div class="advantages__unit unit unit--dark">
             <span class="unit__numeral">100</span>
             <h3 class="unit__title unit__title--dark">Тренажеров</h3>
-            <p class="unit__content unit__content--dark">Современные тренажеры на все группы мышц</p>
+            <p class="unit__content unit__content--dark">Современные тренажеры<br> на все группы мышц</p>
           </div>
           <div class="advantages__unit unit unit--comfort">
             <div class="unit__number unit__number--comfort"></div>
@@ -426,11 +449,13 @@
             <a class="chief__link" href="#">подробнее</a>
           </div>
         </div>
-        <picture>
-          <source media="(max-width: 767px)" srcset="img/girl-mob@1x.jpg 1x, img/girl-mob@2x.jpg 2x">
-          <source media="(max-width: 1199px)" srcset="img/girl-tab@1x.jpg 1x, img/girl-tab@2x.jpg 2x">
-          <img class="promo__image" src="img/girl-des@1x.jpg" srcset="img/girl-des@2x.jpg 2x" width="280" height="462" alt="Фото спортсменки">
-        </picture>
+        <div class="promo__wrapper">
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/girl-mob@1x.jpg 1x, img/girl-mob@2x.jpg 2x">
+            <source media="(max-width: 1199px)" srcset="img/girl-tab@1x.jpg 1x, img/girl-tab@2x.jpg 2x">
+            <img class="promo__image" src="img/girl-des@1x.jpg" srcset="img/girl-des@2x.jpg 2x" width="280" height="462" alt="Фото спортсменки">
+          </picture>
+        </div>
         <ul class="promo__list stock">
           <li class="stock__item">
             <h3 class="stock__title">Месяц бесплатно</h3>
@@ -448,28 +473,30 @@
     <section class="page-main__comment comment">
       <div class="comment__wrapper">
         <h2 class="comment__head">Отзывы</h2>
-        <div class="comment__wrap">
-          <div class="comment__block comment__block--first show">
-            <div class="comment__cont">
-              <img class="comment__image" src="img/foto-comment.png"  width="80" height="80" alt="Фото пользователя">
-              <div class="comment__content">
-                <p class="comment__name">Анна Орлова</p>
-                <p class="comment__text">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+        <div class="comment__container">
+          <div class="comment__wrap">
+            <div class="comment__block comment__block--first show">
+              <div class="comment__cont">
+                <img class="comment__image" src="img/foto-comment.png"  width="80" height="80" alt="Фото пользователя">
+                <div class="comment__content">
+                  <p class="comment__name">Анна Орлова</p>
+                  <p class="comment__text">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="comment__block comment__block--second">
-            <div class="comment__cont">
-              <img class="comment__image" src="img/foto-comment.png"  width="80" height="80" alt="Фото пользователя">
-              <div class="comment__content">
-                <p class="comment__name">Мария Петрова</p>
-                <p class="comment__text">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+            <div class="comment__block comment__block--second">
+              <div class="comment__cont">
+                <img class="comment__image" src="img/foto-comment.png"  width="80" height="80" alt="Фото пользователя">
+                <div class="comment__content">
+                  <p class="comment__name">Мария Петрова</p>
+                  <p class="comment__text">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <button class="comment__button comment__button--prev" type="button" name="prev"></button>
-        <button class="comment__button comment__button--next" type="button" name="next"></button>
+        <button class="comment__button comment__button--prev" type="button" name="prev" aria-label="Предыдущий отзыв"></button>
+        <button class="comment__button comment__button--next" type="button" name="next" aria-label="Следующий отзыв"></button>
       </div>
     </section>
   </main>
@@ -483,7 +510,7 @@
             <input class="form__input form__input--name" name="name" type="text" id="name" value="" placeholder="Имя" minlength="2" maxlength="20" required="required">
             <label class="visually-hidden" for="name">Введите имя</label>
             <input class="form__input form__input--phone" name="telephone" type="text" id="phone" value="" placeholder="Телефон" maxlength="16" required="required">
-            <label class="visually-hidden" for="name">Введите телефон</label>
+            <label class="visually-hidden" for="phone">Введите телефон</label>
           </div>
           <button class="form__button" type="submit" name="button">отправить</button>
         </form>
@@ -569,6 +596,11 @@
       </div>
     </section>
   </footer>
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+  </script>
+  <script src="js/picturefill.min.js" async></script>
   <script src="js/script.js"></script>
 </body>
 </html>

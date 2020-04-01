@@ -1,11 +1,12 @@
 .membership {
   position: relative;
-  max-width: 1366px;
+  min-width: 1366px;
   width: 100%;
   min-height: 851px;
   @include marginnone;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   background-color: $light-gray;
   color: $blue;
@@ -18,16 +19,16 @@
     background-size: 100%;
     width: 287px;
     height: 494px;
-    right: 0;
-    bottom: -160px;
+    right: -2px;
+    bottom: -150px;
   }
 }
 
 .membership__head {
   @include marginnone;
   width: 230px;
-  margin-top: 120px;
-  margin-bottom: 50px;
+  margin-top: 115px;
+  margin-bottom: 36px;
   font-family: "Bebas Neue", "Arial", sans-serif;
   font-size: 49px;
   line-height: 49px;
@@ -35,15 +36,20 @@
   color: $storm;
 }
 
+.membership__wrapper {
+  @include marginnone;
+  width: 1160px;
+  @include center;
+  min-height: 448px;
+  display: flex;
+}
+
 .membership__wrap {
   position: relative;
   @include marginnone;
-  max-width: 1160px;
-  min-width: 1080px;
-  width: 85%;
+  width: 1160px;
   @include center;
   min-height: 448px;
-  margin-bottom: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,24 +63,27 @@
     min-height: 1779px;
 
     &::before {
-      width: 259px;
-      height: 494px;
+      width: 347px;
+      height: 444px;
+      background-image: url("../img/disc-tab.png");
+      background-repeat: no-repeat;
+      background-size: 100%;
       right: 0;
-      bottom: -160px;
+      bottom: -125px;
     }
   }
 
   .membership__head {
     width: 205px;
-    margin-top: 100px;
-    margin-bottom: 45px;
+    margin-top: 97px;
+    margin-bottom: 22px;
     font-size: 42px;
     line-height: 42px;
+    text-align: center;
   }
 
   .membership__wrap {
-    min-width: 442px;
-    width: 57.6%;
+    width: 436px;
     min-height: 1424px;
     margin-bottom: 100px;
     flex-direction: column;
@@ -94,15 +103,15 @@
 
   .membership__head {
     width: 150px;
-    margin-top: 70px;
-    margin-bottom: 35px;
+    margin-top: 67px;
+    margin-bottom: 15px;
     font-size: 32px;
     line-height: 32px;
+    letter-spacing: 0.038em;
   }
 
   .membership__wrap {
-    min-width: 290px;
-    width: 90.6%;
+    width: 290px;
     min-height: 1222px;
     margin-bottom: 70px;
   }

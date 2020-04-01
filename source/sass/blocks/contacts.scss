@@ -12,18 +12,17 @@
 
 .contacts__cont {
   width: 400px;
-  min-height: 198px;
+  min-height: 202px;
   margin-right: 35px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
 .contacts__head {
   @include marginnone;
   width: 400px;
-  margin-bottom: 30px;
+  margin-bottom: 42px;
   font-family: "Bebas Neue", "Arial", sans-serif;
   font-size: 49px;
   line-height: 49px;
@@ -47,19 +46,22 @@
 
   &--right {
     width: 130px;
-    padding-left: 50px;
+    padding-left: 60px;
     border-left: 1px solid #74819C;
   }
 }
 
 .contacts__block {
   width: 230px;
-  height: 65px;
+  height: 51px;
   display: flex;
   flex-direction: column;
 
+  &--top {
+  }
+
   &--bottom {
-    min-height: 36px;
+    height: 65px;
     justify-content: flex-end;
   }
 
@@ -71,6 +73,7 @@
 .contacts__title {
   @include marginnone;
   margin-bottom: 5px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
@@ -78,6 +81,7 @@
 
 .contacts__text {
   @include marginnone;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
 
@@ -95,6 +99,7 @@
 .contacts__tel,
 .contacts__mail {
   @include marginnone;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
 }
@@ -127,7 +132,7 @@
 
   .contacts__wrap {
     width: 266px;
-    min-height: 129px;
+    min-height: 130px;
 
     &--right {
       width: 190px;
@@ -137,10 +142,11 @@
 
   .contacts__block {
     width: 266px;
-    height: 70px;
+    height: 60px;
 
     &--bottom {
-      min-height: 47px;
+      margin-top: 20px;
+      height: 66px;
       justify-content: flex-end;
     }
 
@@ -172,6 +178,7 @@
   .contacts {
     width: 100%;
     min-height: 507px;
+    border: none;
   }
 
   .contacts__cont {
@@ -182,25 +189,59 @@
 
   .contacts__head {
     width: 290px;
-    margin-bottom: 45px;
+    margin-bottom: 36px;
     font-size: 32px;
     line-height: 32px;
   }
 
   .contacts__wrapper {
     width: 290px;
-    min-height: 293px;
+    min-height: 303px;
     flex-direction: column;
   }
 
   .contacts__wrap {
     width: 290px;
-    min-height: 129px;
+    min-height: 140px;
 
     &--right {
       width: 290px;
+      min-height: 150px;
       padding-left: 0;
       border-left: none;
     }
   }
+
+  .contacts__block {
+    height: 70px;
+
+    &--bottom {
+      margin-top: 0px;
+      height: 72px;
+      justify-content: flex-end;
+    }
+
+    &--right {
+      width: 190px;
+      height: 70px;
+      justify-content: flex-end;
+    }
+  }
+
+  .contacts__title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .contacts__text {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .contacts__tel,
+  .contacts__mail {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
 }

@@ -1,7 +1,7 @@
 .trainers {
-  max-width: 1366px;
+  min-width: 1366px;
   width: 100%;
-  min-height: 511px;
+  min-height: 515px;
   @include center;
   display: flex;
   flex-direction: column;
@@ -10,9 +10,7 @@
 
 .trainers__wrap {
   position: relative;
-  max-width: 1272px;
-  min-width: 1200px;
-  width: 93.5%;
+  width: 1272px;
   min-height: 511px;
   @include center;
   display: flex;
@@ -24,7 +22,7 @@
   position: absolute;
   width: 16px;
   height: 32px;
-  bottom: 240px;
+  bottom: 244px;
   border: none;
   background: transparent;
   background-repeat: no-repeat;
@@ -33,11 +31,25 @@
   &--left {
     left: 0;
     background-image: url("../img/prev.png");
+    cursor: pointer;
+    outline: none;
+
+    &:hover,
+    &:focus {
+      background-image: url("../img/prev-active.png");
+    }
   }
 
   &--right {
     right: 4px;
     background-image: url("../img/next.png");
+    cursor: pointer;
+    outline: none;
+
+    &:hover,
+    &:focus {
+      background-image: url("../img/next-active.png");
+    }
   }
 }
 
@@ -46,7 +58,7 @@
   @include center;
   @include center;
   min-height: 37px;
-  margin-bottom: 62px;
+  margin-bottom: 54px;
   font-family: "Bebas Neue", "Arial", sans-serif;
   font-size: 49px;
   line-height: 49px;
@@ -90,10 +102,11 @@
 
 .trainers__item {
   position: relative;
-  width: 260px;
-  height: 294px;
+  min-width: 260px;
+  height: 296px;
   margin-right: 40px;
   background-color: $light-gray;
+  cursor: pointer;
 
   .trainers__info {
     display: none;
@@ -122,7 +135,7 @@
   width: 260px;
   min-height: 13px;
   left: 0;
-  bottom: 30px;
+  bottom: 10px;
   font-weight: bold;
   font-size: 18px;
   line-height: 27px;
@@ -144,14 +157,13 @@
     position: relative;
     min-width: 768px;
     width: 100%;
-    min-height: 476px;
+    min-height: 480px;
     align-items: center;
   }
 
   .trainers__wrap {
     position: relative;
-    min-width: 678px;
-    width: 88.3px;
+    width: 678px;
     min-height: 476px;
     @include center;
     display: flex;
@@ -160,7 +172,7 @@
   }
 
   .trainers__button {
-    bottom: 220px;
+    bottom: 230px;
   }
 
   .trainers__head {
@@ -169,7 +181,7 @@
     min-height: 32px;
     margin-right: 0;
     margin-left: 0;
-    margin-bottom: 50px;
+    margin-bottom: 43px;
     font-size: 42px;
     line-height: 42px;
     text-align: center;
@@ -211,7 +223,7 @@
     position: relative;
     width: 268px;
     height: 294px;
-    margin-right: 30px;
+    margin-right: 37px;
 
     .trainers__info {
       display: none;
@@ -230,6 +242,10 @@
     width: 268px;
     height: 294px;
   }
+
+  .trainers__name {
+    bottom: 6px;
+  }
 }
 
 @media (min-width: $mobile-width) and (max-width: $mobile-width-only) {
@@ -237,18 +253,23 @@
     position: relative;
     min-width: 320px;
     width: 100%;
-    min-height: 418px;
+    min-height: 420px;
     align-items: center;
   }
 
   .trainers__wrap {
-    min-width: 290px;
-    width: 90.1px;
+    width: 290px;
     min-height: 418px;
   }
 
   .trainers__button {
-    bottom: 190px;
+    width: 10px;
+    height: 19px;
+    bottom: 194px;
+
+    &--right {
+      right: 1px;
+    }
   }
 
   .trainers__head {
@@ -257,7 +278,7 @@
     min-height: 24px;
     margin-right: 0;
     margin-left: 0;
-    margin-bottom: 50px;
+    margin-bottom: 46px;
     font-size: 32px;
     line-height: 32px;
     text-align: center;

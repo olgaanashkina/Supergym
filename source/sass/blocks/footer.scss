@@ -1,5 +1,5 @@
 .footer {
-  max-width: 1366px;
+  min-width: 1366px;
   width: 100%;
   min-height: 445px;
   @include center;
@@ -10,8 +10,7 @@
 }
 
 .footer__wrapper {
-  max-width: 1366px;
-  width: 100%;
+  width: 1366px;
   min-height: 337px;
   @include center;
   display: flex;
@@ -70,7 +69,7 @@
 
   .footer__feedback {
     width: 100%;
-    min-height: 386px;
+    min-height: 382px;
     flex-direction: column;
   }
 }

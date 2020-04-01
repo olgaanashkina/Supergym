@@ -10,17 +10,17 @@
 
 .stock__item {
   width: 516px;
-  min-height: 211px;
-  padding-left: 32px;
+  min-height: 200px;
+  padding-left: 30px;
   color: $indigo;
-  border: 6px solid transparent;
+  border: 6px solid rgba(0, 0, 0, 0.01);
   border-image: linear-gradient(to top left, #00359f 0%, #d52154 100%);
   border-image-slice: 1;
 }
 
 .stock__title {
   @include marginnone;
-  margin: 35px 0 20px 0;
+  margin: 26px 0 10px 0;
   font-weight: bold;
   font-size: 26px;
   line-height: 28px;
@@ -30,7 +30,7 @@
   @include marginnone;
   font-size: 16px;
   line-height: 22px;
-  margin-bottom: 68px;
+  margin-bottom: 65px;
 }
 
 .stock__link {
@@ -64,7 +64,11 @@
 
   .stock__item {
     width: 280px;
-    min-height: 211px;
+    min-height: 200px;
+  }
+
+  .stock__title {
+    margin: 23px 0 10px 0;
   }
 
   .stock__content {
@@ -102,13 +106,14 @@
 
   .stock__title {
     text-align: center;
+    margin-top: 39px;
   }
 
   .stock__content {
     width: 159px;
     @include center;
     text-align: center;
-    margin-bottom: 32px;
+    margin-bottom: 30px;
   }
 
   .stock__link {

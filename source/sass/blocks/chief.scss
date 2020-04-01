@@ -11,24 +11,23 @@
 
 .chief__wrap {
   width: 180px;
-  min-height: 367px;
+  min-height: 372px;
   display: flex;
   flex-direction: column;
 }
 
 .chief__unit {
   @include marginnone;
-  margin-bottom: 15px;
   font-weight: bold;
   font-size: 28px;
-  line-height: 44px;
+  line-height: 30px;
 }
 
 .chief__value {
   @include marginnone;
   font-weight: bold;
   font-size: 70px;
-  line-height: 72px;
+  line-height: 74px;
   margin-bottom: 10px;
 }
 
@@ -62,7 +61,14 @@
   .chief {
     width: 278px;
     max-height: 462px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
+  }
+
+  .chief__wrap {
+    width: 190px;
+    min-height: 375px;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -75,17 +81,22 @@
 
   .chief__wrap {
     width: 195px;
-    min-height: 204px;
+    min-height: 209px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
   .chief__unit {
-    margin-bottom: 5px;
+    margin-bottom: 0px;
   }
 
   .chief__content {
-    margin-bottom: 30px;
+    margin-bottom: 33px;
+    text-align: center;
+  }
+
+  .chief__value {
+    margin-bottom: 9px;
   }
 }

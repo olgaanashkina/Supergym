@@ -72,9 +72,8 @@
 
   .period__title {
     @include marginnone;
-    min-height: 16px;
-    margin-bottom: 6px;
-    padding-bottom: 4px;
+    min-height: 18px;
+    margin-bottom: 2px;
 
     &--data {
       width: 42px;
@@ -100,7 +99,7 @@
     width: 276px;
     min-height: 19px;
     font-size: 10px;
-    line-height: 15px;
+    line-height: 12px;
   }
 
   .period__hour {
@@ -123,8 +122,8 @@
 
   .period__title {
     min-height: 16px;
-    margin-bottom: 5px;
-    padding-bottom: 4px;
+    margin-bottom: 3px;
+    padding-bottom: 3px;
 
     &--data {
       width: 42px;
@@ -134,7 +133,7 @@
   .period__wrap {
     width: 42px;
     min-height: 18px;
-    margin-bottom: 13px;
+    margin-bottom: 12px;
   }
 
   .period__number {
@@ -150,7 +149,7 @@
     width: 26px;
     max-height: 19px;
     font-size: 10px;
-    line-height: 15px;
+    line-height: 12px;
   }
 
   .period__hour {
