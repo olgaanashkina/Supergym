@@ -2,11 +2,12 @@
   min-width: 1366px;
   width: 100%;
   min-height: 445px;
+  padding: 35px 0;
   @include center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  // align-items: center;
 }
 
 .footer__wrapper {
@@ -34,7 +35,7 @@
     @include center;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    // align-items: center;
   }
 
   .footer__wrapper {

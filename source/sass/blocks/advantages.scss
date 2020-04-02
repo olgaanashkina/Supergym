@@ -3,8 +3,8 @@
   width: 100%;
   @include center;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  // justify-content: center;
+  // align-items: center;
   background-color: $light-gray;
 }
 
@@ -12,9 +12,10 @@
   width: 1040px;
   min-height: 424px;
   // @include center;
-  margin: 120px auto 120px auto;
-  // margin-top: 120px;
-  // margin-bottom: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 120px;
+  margin-bottom: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
