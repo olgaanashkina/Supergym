@@ -1,5 +1,5 @@
 .page-header {
-  min-width: 1366px;
+  min-width: 1200px;
   width: 100%;
   @include center;
   min-height: 658px;
@@ -37,7 +37,6 @@
 }
 
 .page-header__tel {
-  width: 155px;
   @include marginnone;
 }
 

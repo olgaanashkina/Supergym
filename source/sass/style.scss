@@ -55,20 +55,20 @@
 }
 
 html {
-  position: relative;
   width: 100%;
-  overflow-x: hidden;
+  @include center;
+  // overflow-x: hidden;
 }
 
 body {
-  position: relative;
   min-width: 320px;
   width: 100%;
-  margin: 0 auto;
-  padding: 0;
+  @include center;
+  // padding: 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
+  // overflow-x: hidden;
 }
 
 a {

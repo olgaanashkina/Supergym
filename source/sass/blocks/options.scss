@@ -1,14 +1,14 @@
 .options {
   position: absolute;
   width: 100%;
-  height: 100%;
+  // height: 100%;
   left: 0;
   top: 0;
   opacity: 0;
   z-index: 1;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  // justify-content: center;
+  // align-items: center;
   -webkit-transition: opacity 1s;
   -moz-transition: opacity 1s;
   -o-transition: opacity 1s;
@@ -24,14 +24,15 @@
   list-style: none;
   @include marginnone;
   width: 100%;
+  @include center;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .options__item {
-  width: 352px;
+  width: 348px;
   min-height: 446px;
-  margin-right: 3%;
+  margin-right: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,8 +40,7 @@
   border: 6px solid transparent;
   cursor: pointer;
 
-
-  &:last-child {
+  &:nth-child(3n) {
     margin-right: 0;
   }
 
@@ -104,13 +104,15 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    flex-wrap: nowrap;
+    // justify-content: space-between;
     align-items: center;
   }
 
   .options__item {
     width: 432px;
     min-height: 434px;
+    margin-bottom: 40px;
     margin-right: 0;
   }
 
@@ -136,10 +138,10 @@
     width: 278px;
     margin-right: 0;
     min-height: 371px;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 
     &:nth-child(3n) {
-      margin-bottom: 0;
+      margin-bottom: 35px;
     }
   }
 

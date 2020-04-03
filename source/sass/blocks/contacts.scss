@@ -3,7 +3,7 @@
   min-height: 337px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   color: $blue;
   border-top: 1px solid #74819C;
   border-right: 1px solid #74819C;
@@ -12,8 +12,8 @@
 .contacts__cont {
   width: 400px;
   min-height: 202px;
+  margin-left: 120px;
   margin-top: 65px;
-  margin-right: 35px;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -116,8 +116,11 @@
   .contacts__cont {
     width: 460px;
     margin-top: 69px;
+    margin-left: 0px;
     min-height: 211px;
+    align-self: center;
     margin-right: 5%;
+
   }
 
   .contacts__head {
@@ -187,7 +190,9 @@
     width: 290px;
     min-height: 367px;
     margin-top: 68px;
+    margin-left: 0;
     margin-right: 0;
+    align-self: center;
   }
 
   .contacts__head {

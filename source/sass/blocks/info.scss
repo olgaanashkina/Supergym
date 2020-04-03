@@ -7,7 +7,6 @@
   left: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   background-color: rgba(16, 38, 84, 0.89);
   color: $white;
@@ -15,7 +14,7 @@
 
 .info__wrap {
   width: 160px;
-  height: 178px;
+  padding: 55px 55px 50px 53px;
   @include center;
   display: flex;
   flex-direction: column;
@@ -24,21 +23,19 @@
 }
 
 .info__name {
-  width: 160px;
+  width: 170px;
   @include marginnone;
-  margin-top: 58px;
   min-height: 13px;
   font-weight: bold;
   font-size: 18px;
-  line-height: 27px;
-  margin-bottom: 10px;
+  line-height: 20px;
   text-align: center;
 }
 
 .info__kind {
   width: 160px;
   @include marginnone;
-  margin-bottom: 45px;
+  margin-bottom: 33px;
   font-size: 16px;
   line-height: 24px;
   text-align: center;
@@ -46,16 +43,44 @@
 }
 
 .info__list {
-  width: 160px;
+  width: 200px;
   @include marginnone;
+  list-style: none;
   font-size: 14px;
   line-height: 21px;
+  align-self: flex-start;
+}
+
+.info__item {
+  position: relative;
+  margin-bottom: 12px;
+  margin-left: 20px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: $white;
+    left: -18px;
+    top: 6px;
+  }
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .info {
+    display: none;
+    position: absolute;
     width: 268px;
     height: 294px;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(16, 38, 84, 0.89);
+    color: $white;
   }
 }
 
@@ -63,15 +88,15 @@
   .info {
     width: 226px;
     height: 274px;
+    display: block;
   }
 
   .info__wrap {
     width: 159px;
-    height: 178px;
+    padding: 45px 34px 48px 34px;
   }
 
   .info__name {
     width: 159px;
-    margin-top: 48px;
   }
 }

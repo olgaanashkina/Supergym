@@ -56,6 +56,7 @@
     width: 678px;
     height: 211px;
     @include marginnone;
+    margin-top: 5px;
     list-style: none;
     display: flex;
     flex-direction: row;

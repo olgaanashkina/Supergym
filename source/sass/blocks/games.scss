@@ -1,5 +1,5 @@
 .games {
-  min-width: 1366px;
+  min-width: 1200px;
   width: 100%;
   min-height: 738px;
   @include marginnone;
@@ -172,7 +172,6 @@
   }
 
   .games__back {
-    padding-top: 5px;
     width: 290px;
     max-width: 291px;
     width: 90.6%;

@@ -1,5 +1,42 @@
 'use strict';
 
+var showActiveBlock = function () {
+  var container = document.querySelector('.membership__wrapper');
+  var options = document.querySelector('.options-show');
+  var arrows = options.querySelectorAll('.options__item');
+  var calc = Math.floor(arrows.length/3);
+
+  if (document.documentElement.clientWidth >= 1200) {
+    if (arrows.length < 4) {
+      container.style.height = "448px";
+    } else {
+      for (var i = 0; i < arrows.length; i++) {
+        arrows[i].style.marginBottom = "40px";
+      }
+      container.style.height = calc*488 + "px";
+    }
+  }
+  if (document.documentElement.clientWidth >= 768 &&  document.documentElement.clientWidth < 1200) {
+    if (arrows.length < 4) {
+      container.style.height = "1424px";
+    } else {
+      container.style.height = calc*1424 + "px";
+    }
+  }
+  if (document.documentElement.clientWidth >= 320 && document.documentElement.clientWidth < 768) {
+    if (arrows.length < 4) {
+      container.style.height = "1222px";
+    } else {
+      container.style.height = calc*1222 + "px";
+    }
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  showActiveBlock();
+});
+
 document.addEventListener('DOMContentLoaded', function() {
   var active = 0, prev = 0;
   var slides = document.getElementsByClassName('options');
@@ -14,9 +51,13 @@ document.addEventListener('DOMContentLoaded', function() {
     })
   (i);
  }
+
   var changeActiveSlide = function(prev) {
+
     slides[prev].classList.remove('options-show');
     slides[active].classList.add('options-show');
+
+    showActiveBlock();
 
     navs[prev].classList.remove('time-active');
     navs[active].classList.add('time-active');

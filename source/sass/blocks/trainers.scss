@@ -1,5 +1,5 @@
 .trainers {
-  min-width: 1366px;
+  min-width: 1200px;
   width: 100%;
   min-height: 515px;
   @include center;
@@ -10,7 +10,7 @@
 
 .trainers__wrap {
   position: relative;
-  width: 1272px;
+  width: 1160px;
   min-height: 511px;
   @include center;
   display: flex;
@@ -29,7 +29,7 @@
   background-size: contain;
 
   &--left {
-    left: 0;
+    left: -55px;
     background-image: url("../img/prev.png");
     cursor: pointer;
     outline: none;
@@ -41,7 +41,7 @@
   }
 
   &--right {
-    right: 4px;
+    right: -55px;
     background-image: url("../img/next.png");
     cursor: pointer;
     outline: none;
@@ -69,7 +69,7 @@
 .trainers__slider {
   position: relative;
   width: 1152px;
-  height: 294px;
+  // height: 294px;
   @include center;
   display: flex;
   justify-content: space-between;
@@ -79,7 +79,7 @@
 .trainers__slide-des {
   position: absolute;
   width: 100%;
-  height: 100%;
+  // height: 100%;
   top: 0;
   left: 0;
   opacity: 0;
@@ -95,7 +95,7 @@
 
 .trainers__slide-tab {
   width: 558px;
-  height: 294px;
+  // height: 294px;
   display: flex;
   justify-content: space-between;
 }
@@ -103,7 +103,7 @@
 .trainers__item {
   position: relative;
   min-width: 260px;
-  height: 296px;
+  height: 294px;
   margin-right: 40px;
   background-color: $light-gray;
   cursor: pointer;
@@ -173,6 +173,14 @@
 
   .trainers__button {
     bottom: 230px;
+
+    &--left {
+      left: 0;
+    }
+
+    &--right {
+      right: 0;
+    }
   }
 
   .trainers__head {
@@ -205,7 +213,7 @@
   .trainers__slide-tab {
     position: absolute;
     width: 100%;
-    height: 100%;
+    // height: 100%;
     top: 0;
     left: 0;
     opacity: 0;
@@ -263,12 +271,17 @@
   }
 
   .trainers__button {
+    position: absolute;
     width: 10px;
     height: 19px;
     bottom: 194px;
 
+    &--left {
+      left: 3px;
+    }
+
     &--right {
-      right: 1px;
+      right: -1px;
     }
   }
 
@@ -286,7 +299,7 @@
 
   .trainers__slider {
     position: relative;
-    width: 225px;
+    width: 226px;
     height: 274px;
   }
 
@@ -298,8 +311,10 @@
 
   .trainers__item {
     position: absolute;
+    min-width: 226px;
+    height: 274px;
     width: 100%;
-    height: 100%;
+    // height: 100%;
     top: 0;
     left: 0;
     opacity: 0;
@@ -311,6 +326,7 @@
     -moz-transition: opacity 1s;
     -o-transition: opacity 1s;
     transition: opacity 1s;
+    margin-right: 0px;
 
     .trainers__info {
       display: none;
