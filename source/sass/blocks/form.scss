@@ -1,7 +1,7 @@
 .form {
   width: 410px;
   min-height: 182px;
-  margin-right: 170px;
+  margin-right: 169px;
   margin-top: 64px;
   display: flex;
   justify-content: flex-start;
@@ -38,7 +38,7 @@
   width: 190px;
   height: 22px;
   margin-bottom: 14px;
-  padding: 2px 0 10px 0;
+  padding: 6px 0 6px 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 18px;
   line-height: 18px;
@@ -95,7 +95,8 @@
     width: 474px;
     font-size: 42px;
     line-height: 42px;
-    margin-bottom: 34px;
+    margin-bottom: 32px;
+    letter-spacing: 0.037em;
   }
 
   .form__wrap {
@@ -105,7 +106,7 @@
   .form__input {
     width: 206px;
     padding-bottom: 3px;
-    margin-bottom: 20px;
+    margin-bottom: 21px;
   }
 
   .form__button {
@@ -117,14 +118,14 @@
 @media (min-width: $mobile-width) and (max-width: $mobile-width-only) {
   .form {
     width: 290px;
-    min-height: 251px;
+    min-height: 249px;
     margin: 0 auto;
   }
 
   .form__text {
     width: 290px;
     min-height: 24px;
-    margin-bottom: 35px;
+    margin-bottom: 32px;
     font-size: 32px;
     line-height: 32px;
   }
@@ -139,13 +140,13 @@
   .form__input {
     width: 290px;
     padding-bottom: 5px;
-    margin-bottom: 30px;
+    margin-bottom: 26px;
   }
 
   .form__button {
     width: 290px;
     padding: 0;
-    margin-top: 8px;
+    margin-top: 12px;
 
   }
 }

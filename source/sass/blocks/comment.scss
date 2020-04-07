@@ -62,7 +62,7 @@
   font-family: "Bebas Neue", "Arial", sans-serif;
   font-size: 49px;
   line-height: 49px;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.035em;
   color: $blue;
   text-align: center;
 }
@@ -124,8 +124,8 @@
   @include marginnone;
   font-weight: bold;
   font-size: 20px;
-  line-height: 30px;
-  margin-bottom: 10px;
+  line-height: 22px;
+  margin-bottom: 15px;
 }
 
 .comment__text {
@@ -168,7 +168,7 @@
   .comment__cont {
     width: 436px;
     min-height: 118px;
-    padding: 59px;
+    padding: 61px;
     display: flex;
     justify-content: space-between;
   }
@@ -214,7 +214,7 @@
     top: 239px;
 
     &--next {
-      right: 0px;
+      right: -3px;
     }
   }
 
@@ -233,7 +233,7 @@
   .comment__cont {
     width: 176px;
     min-height: 225px;
-    padding: 44px 25px 35px 25px;
+    padding: 51px 25px 37px 25px;
   }
 
   .comment__content {
@@ -245,7 +245,8 @@
 
   .comment__name {
     width: 75px;
-    margin-bottom: 20px;
+    line-height: 26px;
+    margin-bottom: 22px;
     align-self: flex-end;
   }
 

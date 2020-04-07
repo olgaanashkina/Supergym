@@ -20,20 +20,20 @@ var showActiveBlock = function () {
     if (arrows.length < 4) {
       container.style.height = "1424px";
     } else {
-      container.style.height = calc*1424 + "px";
+      container.style.height = (calc*1424 + 100) + "px";
     }
   }
   if (document.documentElement.clientWidth >= 320 && document.documentElement.clientWidth < 768) {
     if (arrows.length < 4) {
       container.style.height = "1222px";
     } else {
-      container.style.height = calc*1222 + "px";
+      container.style.height = (calc*1222 + 90) + "px";
     }
   }
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-
+document.addEventListener("DOMContentLoaded", function (evt) {
+  evt.preventDefault();
   showActiveBlock();
 });
 

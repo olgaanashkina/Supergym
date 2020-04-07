@@ -1,7 +1,7 @@
 .promo {
   min-width: 1200px;
   width: 100%;
-  min-height: 798px;
+  min-height: 795px;
   @include center;
   display: flex;
   flex-direction: column;
@@ -13,7 +13,7 @@
   @include marginnone;
   width: 1160px;
   min-height: 37px;
-  margin: 115px 0 55px 0;
+  margin: 117px 0 55px 0;
   font-family: "Bebas Neue", "Arial", sans-serif;
   font-size: 49px;
   line-height: 49px;
@@ -54,7 +54,7 @@
     @include marginnone;
     width: 768px;
     min-height: 32px;
-    margin: 96px 0 44px 0;
+    margin: 98px 0 41px 0;
     font-size: 42px;
     line-height: 42px;
   }
@@ -91,7 +91,7 @@
     @include marginnone;
     width: 320px;
     min-height: 24px;
-    margin: 68px 0 42px 0;
+    margin: 70px 0 44px 0;
     font-size: 32px;
     line-height: 32px;
   }

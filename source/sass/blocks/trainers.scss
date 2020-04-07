@@ -10,7 +10,9 @@
 
 .trainers__wrap {
   position: relative;
-  width: 1160px;
+  min-width: 1200px;
+  max-width: 1272px;
+  width: 93.12%;
   min-height: 511px;
   @include center;
   display: flex;
@@ -29,7 +31,7 @@
   background-size: contain;
 
   &--left {
-    left: -55px;
+    left: 0px;
     background-image: url("../img/prev.png");
     cursor: pointer;
     outline: none;
@@ -41,7 +43,7 @@
   }
 
   &--right {
-    right: -55px;
+    right: 0px;
     background-image: url("../img/next.png");
     cursor: pointer;
     outline: none;
@@ -58,28 +60,27 @@
   @include center;
   @include center;
   min-height: 37px;
-  margin-bottom: 54px;
+  margin-bottom: 52px;
   font-family: "Bebas Neue", "Arial", sans-serif;
   font-size: 49px;
   line-height: 49px;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.04em;
   color: $blue;
 }
 
 .trainers__slider {
   position: relative;
-  width: 1152px;
-  // height: 294px;
+  min-width: 1100px;
+  width: 91.2%;
   @include center;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: nowrap;
 }
 
 .trainers__slide-des {
   position: absolute;
   width: 100%;
-  // height: 100%;
   top: 0;
   left: 0;
   opacity: 0;
@@ -94,17 +95,16 @@
 }
 
 .trainers__slide-tab {
-  width: 558px;
-  // height: 294px;
+  min-width: 540px;
+  width: 48.4%;
   display: flex;
   justify-content: space-between;
 }
 
 .trainers__item {
   position: relative;
-  min-width: 260px;
+  width: 260px;
   height: 294px;
-  margin-right: 40px;
   background-color: $light-gray;
   cursor: pointer;
 
@@ -135,7 +135,7 @@
   width: 260px;
   min-height: 13px;
   left: 0;
-  bottom: 10px;
+  bottom: 7px;
   font-weight: bold;
   font-size: 18px;
   line-height: 27px;
@@ -157,13 +157,15 @@
     position: relative;
     min-width: 768px;
     width: 100%;
-    min-height: 480px;
+    min-height: 478px;
     align-items: center;
   }
 
   .trainers__wrap {
     position: relative;
-    width: 678px;
+    min-width: 678px;
+    max-width: 679px;
+    // width: 88.28%;
     min-height: 476px;
     @include center;
     display: flex;
@@ -172,7 +174,7 @@
   }
 
   .trainers__button {
-    bottom: 230px;
+    bottom: 228px;
 
     &--left {
       left: 0;
@@ -197,8 +199,10 @@
 
   .trainers__slider {
     position: relative;
-    width: 566px;
-    height: 294px;
+    min-width: 566px;
+    max-width: 567px;
+    // width: 83.48%;
+    // height: 294px;
     @include center;
     display: flex;
     justify-content: space-between;
@@ -231,7 +235,7 @@
     position: relative;
     width: 268px;
     height: 294px;
-    margin-right: 37px;
+    // margin-right: 37px;
 
     .trainers__info {
       display: none;
@@ -261,12 +265,13 @@
     position: relative;
     min-width: 320px;
     width: 100%;
-    min-height: 420px;
+    min-height: 418px;
     align-items: center;
   }
 
   .trainers__wrap {
-    width: 290px;
+    min-width: 290px;
+    max-width: 291px;
     min-height: 418px;
   }
 
@@ -277,11 +282,11 @@
     bottom: 194px;
 
     &--left {
-      left: 3px;
+      left: 0px;
     }
 
     &--right {
-      right: -1px;
+      right: 0px;
     }
   }
 
@@ -299,7 +304,8 @@
 
   .trainers__slider {
     position: relative;
-    width: 226px;
+    min-width: 226px;
+    max-width: 227px;
     height: 274px;
   }
 
@@ -326,7 +332,6 @@
     -moz-transition: opacity 1s;
     -o-transition: opacity 1s;
     transition: opacity 1s;
-    margin-right: 0px;
 
     .trainers__info {
       display: none;

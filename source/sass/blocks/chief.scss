@@ -10,8 +10,8 @@
 }
 
 .chief__wrap {
-  width: 180px;
-  min-height: 372px;
+  width: 190px;
+  min-height: 380px;
   display: flex;
   flex-direction: column;
 }
@@ -49,6 +49,7 @@
   text-transform: uppercase;
   color: $white;
   border-bottom: 1px solid $white;
+  margin-bottom: 5px;
 
   &:hover,
   &:focus {
@@ -61,7 +62,7 @@
   .chief {
     width: 278px;
     max-height: 462px;
-    margin-bottom: 25px;
+    margin-bottom: 23px;
   }
 
   .chief__wrap {
@@ -69,6 +70,14 @@
     min-height: 375px;
     display: flex;
     flex-direction: column;
+  }
+
+  .chief__value {
+    margin-bottom: 13px;
+  }
+
+  .chief__link {
+    margin-bottom: 0;
   }
 }
 

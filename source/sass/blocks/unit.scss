@@ -15,7 +15,8 @@
 
   &--comfort {
     width: 475px;
-    padding-left: 25px;
+    padding-left: 22px;
+    min-height: 158px;
     border-top: 2px solid rgba(209, 10, 66, 0.2);
   }
 
@@ -71,7 +72,7 @@
 
 .unit__wrap {
   width: 210px;
-  padding-left: 30px;
+  padding-left: 33px;
 
   &--big {
     width: 233px;
@@ -107,7 +108,7 @@
   @include marginnone;
   font-weight: 300;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 22px;
 
   &--dark {
     width: 172px;
@@ -125,6 +126,7 @@
 
     &--comfort {
       border-top: none;
+      min-height: 236px;
     }
 
     &--dark {
@@ -188,13 +190,14 @@
   }
 
   .unit__title {
-    margin-bottom: 8px;
+    margin-bottom: 7px;
     font-size: 20px;
     line-height: 20px;
 
     &--dark {
       font-size: 22px;
-      line-height: 33px;
+      line-height: 30px;
+      margin-bottom: 12px;
     }
   }
 
@@ -207,7 +210,7 @@
 @media (min-width: $mobile-width) and (max-width: $mobile-width-only) {
   .unit {
     width: 320px;
-    min-height: 192px;
+    min-height: 193px;
     @include marginnone;
     flex-direction: column;
     justify-content: flex-start;
@@ -224,6 +227,7 @@
       min-height: 239px;
       @include marginnone;
       margin-bottom: 47px;
+      justify-content: flex-start;
     }
 
     &--parking {
@@ -280,16 +284,27 @@
   .unit__title {
     font-size: 20px;
     text-align: center;
-    margin-bottom: 7px;
+    margin-bottom: 5px;
+
+    &--dark {
+      margin-bottom: 12px;
+      line-height: 25px;
+      letter-spacing: 0.033em;
+    }
   }
 
   .unit__content {
     text-align: center;
+    line-height: 22px;
+
+    &--dark {
+      line-height: 24px;
+    }
   }
 
   .unit__numeral {
-    line-height: 74px;
-    margin-top: 33px;
+    line-height: 72px;
+    margin-top: 39px;
     margin-bottom: 0px;
   }
 }

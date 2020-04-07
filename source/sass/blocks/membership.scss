@@ -32,7 +32,7 @@
   font-family: "Bebas Neue", "Arial", sans-serif;
   font-size: 49px;
   line-height: 49px;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.04em;
   color: $storm;
 }
 
@@ -84,7 +84,7 @@
     width: 436px;
     @include center;
     min-height: 1424px;
-    margin-bottom: 100px;
+    // margin-bottom: 100px;
     flex-direction: column;
   }
 
@@ -101,7 +101,7 @@
   .membership {
     min-width: 320px;
     width: 100%;
-    min-height: 1487px;
+    min-height: 1489px;
 
     &::before {
       display: none;
@@ -121,7 +121,7 @@
     width: 290px;
     @include center;
     min-height: 1222px;
-    margin-bottom: 70px;
+    // margin-bottom: 70px;
     flex-direction: column;
   }
 

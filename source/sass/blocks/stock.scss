@@ -20,7 +20,7 @@
 
 .stock__title {
   @include marginnone;
-  margin: 26px 0 10px 0;
+  margin: 23px 0 9px 0;
   font-weight: bold;
   font-size: 26px;
   line-height: 28px;
@@ -69,12 +69,12 @@
   }
 
   .stock__title {
-    margin: 23px 0 10px 0;
+    margin: 27px 0 9px 0;
   }
 
   .stock__content {
     width: 155px;
-    margin-bottom: 40px;
+    margin-bottom: 43px;
 
     &--big {
       width: 245px;
@@ -114,7 +114,7 @@
     width: 159px;
     @include center;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
   }
 
   .stock__link {
