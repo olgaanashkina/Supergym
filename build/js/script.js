@@ -4,30 +4,30 @@ var showActiveBlock = function () {
   var container = document.querySelector('.membership__wrapper');
   var options = document.querySelector('.options-show');
   var arrows = options.querySelectorAll('.options__item');
-  var calc = Math.floor(arrows.length/3);
+  var calc = Math.ceil(arrows.length/3);
 
   if (document.documentElement.clientWidth >= 1200) {
     if (arrows.length < 4) {
-      container.style.height = "448px";
+      container.style.minHeight = "448px";
     } else {
       for (var i = 0; i < arrows.length; i++) {
         arrows[i].style.marginBottom = "40px";
       }
-      container.style.height = calc*488 + "px";
+      container.style.minHeight = calc*488 + "px";
     }
   }
   if (document.documentElement.clientWidth >= 768 &&  document.documentElement.clientWidth < 1200) {
     if (arrows.length < 4) {
-      container.style.height = "1424px";
+      container.style.minHeight = "1424px";
     } else {
-      container.style.height = (calc*1424 + 100) + "px";
+      container.style.minHeight = (calc*1424 + 100) + "px";
     }
   }
   if (document.documentElement.clientWidth >= 320 && document.documentElement.clientWidth < 768) {
     if (arrows.length < 4) {
-      container.style.height = "1222px";
+      container.style.minHeight = "1222px";
     } else {
-      container.style.height = (calc*1222 + 90) + "px";
+      container.style.minHeight = (calc*1222 + 90) + "px";
     }
   }
 }
