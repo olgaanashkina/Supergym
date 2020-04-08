@@ -4,7 +4,7 @@
   width: 343px;
   @include center;
   min-height: 38px;
-  margin-bottom: 36px;
+  margin-bottom: 34px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,7 +14,7 @@
 .time__item {
   font-size: 20px;
   line-height: 30px;
-  min-height: 42px;
+  min-height: 46px;
   display: flex;
 }
 
@@ -23,7 +23,6 @@
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 20px;
   line-height: 30px;
-  min-height: 40px;
   color: rgba(16, 38, 84, 0.5);
   background-color: transparent;
   border: none;

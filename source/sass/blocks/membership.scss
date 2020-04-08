@@ -2,7 +2,6 @@
   position: relative;
   min-width: 1200px;
   width: 100%;
-  // min-height: 851px;
   @include marginnone;
   display: flex;
   flex-direction: column;
@@ -28,7 +27,7 @@
   @include marginnone;
   width: 230px;
   margin-top: 115px;
-  margin-bottom: 35px;
+  margin-bottom: 33px;
   font-family: "Bebas Neue", "Arial", sans-serif;
   font-size: 49px;
   line-height: 49px;
@@ -41,16 +40,9 @@
   width: 1160px;
   @include center;
   min-height: 448px;
-  margin-bottom: 124px;
+  margin-bottom: 80px;
   display: flex;
-}
-
-.membership__wrap {
-  position: relative;
-  @include marginnone;
-  width: 1160px;
-  margin: 0 auto;
-  display: flex;
+  flex-wrap: wrap;
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
@@ -84,15 +76,6 @@
     width: 436px;
     @include center;
     min-height: 1424px;
-    // margin-bottom: 100px;
-    flex-direction: column;
-  }
-
-  .membership__wrap {
-    width: 436px;
-    @include center;
-    min-height: 1424px;
-    margin-bottom: 100px;
     flex-direction: column;
   }
 }
@@ -121,7 +104,6 @@
     width: 290px;
     @include center;
     min-height: 1222px;
-    // margin-bottom: 70px;
     flex-direction: column;
   }
 

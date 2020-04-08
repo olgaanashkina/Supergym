@@ -1,42 +1,5 @@
 'use strict';
 
-var showActiveBlock = function () {
-  var container = document.querySelector('.membership__wrapper');
-  var options = document.querySelector('.options-show');
-  var arrows = options.querySelectorAll('.options__item');
-  var calc = Math.ceil(arrows.length/3);
-
-  if (document.documentElement.clientWidth >= 1200) {
-    if (arrows.length < 4) {
-      container.style.minHeight = "448px";
-    } else {
-      for (var i = 0; i < arrows.length; i++) {
-        arrows[i].style.marginBottom = "40px";
-      }
-      container.style.minHeight = calc*488 + "px";
-    }
-  }
-  if (document.documentElement.clientWidth >= 768 &&  document.documentElement.clientWidth < 1200) {
-    if (arrows.length < 4) {
-      container.style.minHeight = "1424px";
-    } else {
-      container.style.minHeight = (calc*1424 + 100) + "px";
-    }
-  }
-  if (document.documentElement.clientWidth >= 320 && document.documentElement.clientWidth < 768) {
-    if (arrows.length < 4) {
-      container.style.minHeight = "1222px";
-    } else {
-      container.style.minHeight = (calc*1222 + 90) + "px";
-    }
-  }
-}
-
-document.addEventListener("DOMContentLoaded", function (evt) {
-  evt.preventDefault();
-  showActiveBlock();
-});
-
 document.addEventListener('DOMContentLoaded', function() {
   var active = 0, prev = 0;
   var slides = document.getElementsByClassName('options');
@@ -56,8 +19,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     slides[prev].classList.remove('options-show');
     slides[active].classList.add('options-show');
-
-    showActiveBlock();
 
     navs[prev].classList.remove('time-active');
     navs[active].classList.add('time-active');

@@ -1,22 +1,12 @@
 .options {
-  position: absolute;
   width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  opacity: 0;
-  z-index: 1;
   display: flex;
-  // justify-content: center;
-  // align-items: center;
-  -webkit-transition: opacity 1s;
-  -moz-transition: opacity 1s;
-  -o-transition: opacity 1s;
-  transition: opacity 1s;
+  flex-wrap: wrap;
+  display: none;
 }
 
 .options-show {
-  opacity: 1;
+  display: block;
   z-index: 2;
 }
 
@@ -31,8 +21,9 @@
 
 .options__item {
   width: 348px;
-  min-height: 446px;
+  min-height: 442px;
   margin-right: 40px;
+  margin-bottom: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -99,16 +90,6 @@
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-  .options__list {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    // justify-content: space-between;
-    align-items: center;
-  }
-
   .options__item {
     width: 432px;
     min-height: 434px;
